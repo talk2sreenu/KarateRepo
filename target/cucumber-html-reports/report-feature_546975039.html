@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports  - Feature: com/karateTutorials/srcTest.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>demo</td>
+      <td>02 Nov 2021, 09:19</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+
+<thead>
+  <tr class="header dont-sort">
+      <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">com/karateTutorials/srcTest.feature</td>
+          <td      class="passed"    >12</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">12</td>
+
+          <td  class="passed"    >1</td>
+          <td >0</td>
+          <td class="total">1</td>
+
+          <td class="duration" data-value="86395977200">1:26.395</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1822671367.html">@JenkinsTest</a>
+</div>
+
+
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">com/karateTutorials/srcTest.feature</span>
+
+
+</div>
+
+        <div class="description indention">Verify the function call</div>
+
+        <div class="elements inner-level">
+
+<div class="element">
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_1822671367.html">@JenkinsTest</a>
+</div>
+
+
+  <span class="lead-duration duration">1:26.395</span>
+
+
+  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+
+<div class="brief passed">
+  <span class="keyword indention">Scenario Outline</span>
+  <span class="name">Using 'chromedriver'</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">call read('classpath:com/baseUtils/driverUtils.js') {browserName: 'chromedriver'}</span>
+
+  <span class="lead-duration duration">0.103</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>09:17:22.137 the grid url set is: false, default: false 
+09:17:22.358 Invoking Docker Chrome Instance 
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">driver 'https://www.bing.com'</span>
+
+  <span class="lead-duration duration">1:8.202</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-4" class="collapse collapsable-details">
+        <pre>09:17:22.374 custom target configured, calling start()
+09:18:10.433 request:
+1 &gt; GET http://127.0.0.1:65032/json
+1 &gt; Host: 127.0.0.1:65032
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+09:18:10.529 response time in milliseconds: 95
+1 &lt; 200
+1 &lt; Content-Length: 2153
+1 &lt; Content-Type: application/json; charset=UTF-8
+[ {
+   &quot;description&quot;: &quot;&quot;,
+   &quot;devtoolsFrontendUrl&quot;: &quot;/devtools/inspector.html?ws=127.0.0.1:65032/devtools/page/750BE6F1029BE4B72DBBE1512507DFFA&quot;,
+   &quot;id&quot;: &quot;750BE6F1029BE4B72DBBE1512507DFFA&quot;,
+   &quot;title&quot;: &quot;CryptoTokenExtension&quot;,
+   &quot;type&quot;: &quot;background_page&quot;,
+   &quot;url&quot;: &quot;chrome-extension://kmendfapggjehodndflmmgagdbamhnfd/_generated_background_page.html&quot;,
+   &quot;webSocketDebuggerUrl&quot;: &quot;ws://127.0.0.1:65032/devtools/page/750BE6F1029BE4B72DBBE1512507DFFA&quot;
+}, {
+   &quot;description&quot;: &quot;&quot;,
+   &quot;devtoolsFrontendUrl&quot;: &quot;/devtools/inspector.html?ws=127.0.0.1:65032/devtools/page/3292B22DD2DF3A9D717B4D1329C0A39B&quot;,
+   &quot;id&quot;: &quot;3292B22DD2DF3A9D717B4D1329C0A39B&quot;,
+   &quot;title&quot;: &quot;Google Network Speech&quot;,
+   &quot;type&quot;: &quot;background_page&quot;,
+   &quot;url&quot;: &quot;chrome-extension://neajdppkdcdipfabeoofebfddakdcjhd/_generated_background_page.html&quot;,
+   &quot;webSocketDebuggerUrl&quot;: &quot;ws://127.0.0.1:65032/devtools/page/3292B22DD2DF3A9D717B4D1329C0A39B&quot;
+}, {
+   &quot;description&quot;: &quot;&quot;,
+   &quot;devtoolsFrontendUrl&quot;: &quot;/devtools/inspector.html?ws=127.0.0.1:65032/devtools/page/BA87201A2A7FC4B1C8813602FC46C2DE&quot;,
+   &quot;id&quot;: &quot;BA87201A2A7FC4B1C8813602FC46C2DE&quot;,
+   &quot;title&quot;: &quot;Feedback&quot;,
+   &quot;type&quot;: &quot;background_page&quot;,
+   &quot;url&quot;: &quot;chrome-extension://gfdkimpbcpahaombhbimeihdjnejgicl/_generated_background_page.html&quot;,
+   &quot;webSocketDebuggerUrl&quot;: &quot;ws://127.0.0.1:65032/devtools/page/BA87201A2A7FC4B1C8813602FC46C2DE&quot;
+}, {
+   &quot;description&quot;: &quot;&quot;,
+   &quot;devtoolsFrontendUrl&quot;: &quot;/devtools/inspector.html?ws=127.0.0.1:65032/devtools/page/B84C95E5AC2D310BE132E8598539F3A4&quot;,
+   &quot;id&quot;: &quot;B84C95E5AC2D310BE132E8598539F3A4&quot;,
+   &quot;title&quot;: &quot;Google Hangouts&quot;,
+   &quot;type&quot;: &quot;background_page&quot;,
+   &quot;url&quot;: &quot;chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/background.html&quot;,
+   &quot;webSocketDebuggerUrl&quot;: &quot;ws://127.0.0.1:65032/devtools/page/B84C95E5AC2D310BE132E8598539F3A4&quot;
+}, {
+   &quot;description&quot;: &quot;&quot;,
+   &quot;devtoolsFrontendUrl&quot;: &quot;/devtools/inspector.html?ws=127.0.0.1:65032/devtools/page/96DDBF650A34D58FA4DE4259258B3FCA&quot;,
+   &quot;id&quot;: &quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;,
+   &quot;title&quot;: &quot;&quot;,
+   &quot;type&quot;: &quot;page&quot;,
+   &quot;url&quot;: &quot;chrome://welcome/?variant=everywhere&quot;,
+   &quot;webSocketDebuggerUrl&quot;: &quot;ws://127.0.0.1:65032/devtools/page/96DDBF650A34D58FA4DE4259258B3FCA&quot;
+} ]
+
+09:18:10.641 root frame id: 96DDBF650A34D58FA4DE4259258B3FCA
+09:18:21.847 &gt;&gt; {&quot;id&quot;:1,&quot;method&quot;:&quot;Target.attachToTarget&quot;,&quot;params&quot;:{&quot;targetId&quot;:&quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;,&quot;flatten&quot;:true}}
+09:18:22.049 &lt;&lt; {&quot;method&quot;:&quot;Target.attachedToTarget&quot;,&quot;params&quot;:{&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;,&quot;targetInfo&quot;:{&quot;targetId&quot;:&quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;,&quot;type&quot;:&quot;page&quot;,&quot;title&quot;:&quot;Welcome to Chrome&quot;,&quot;url&quot;:&quot;chrome://welcome/&quot;,&quot;attached&quot;:true,&quot;canAccessOpener&quot;:false,&quot;browserContextId&quot;:&quot;CC11E1DB040AA80FA16A681646DE44E8&quot;},&quot;waitingForDebugger&quot;:false}}
+09:18:22.050 &lt;&lt; {&quot;id&quot;:1,&quot;result&quot;:{&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}}
+09:18:22.052 &gt;&gt; {&quot;id&quot;:2,&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;,&quot;method&quot;:&quot;Target.activateTarget&quot;,&quot;params&quot;:{&quot;targetId&quot;:&quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;}}
+09:18:22.058 &lt;&lt; {&quot;id&quot;:2,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:22.059 &gt;&gt; {&quot;id&quot;:3,&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;,&quot;method&quot;:&quot;Page.enable&quot;}
+09:18:23.541 &lt;&lt; {&quot;id&quot;:3,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:23.542 &gt;&gt; {&quot;id&quot;:4,&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;,&quot;method&quot;:&quot;Runtime.enable&quot;}
+09:18:23.671 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextCreated&quot;,&quot;params&quot;:{&quot;context&quot;:{&quot;id&quot;:1,&quot;origin&quot;:&quot;chrome://welcome&quot;,&quot;name&quot;:&quot;&quot;,&quot;uniqueId&quot;:&quot;-8339054598915356957.-4429518029450149751&quot;,&quot;auxData&quot;:{&quot;isDefault&quot;:true,&quot;type&quot;:&quot;default&quot;,&quot;frameId&quot;:&quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;}}},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:23.672 &lt;&lt; {&quot;id&quot;:4,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:23.691 &gt;&gt; {&quot;id&quot;:5,&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;,&quot;method&quot;:&quot;Browser.getWindowForTarget&quot;,&quot;params&quot;:{&quot;targetId&quot;:&quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;}}
+09:18:23.738 &lt;&lt; {&quot;method&quot;:&quot;Page.loadEventFired&quot;,&quot;params&quot;:{&quot;timestamp&quot;:670.38203},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:23.741 &lt;&lt; {&quot;method&quot;:&quot;Page.frameStoppedLoading&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:23.742 &lt;&lt; {&quot;id&quot;:5,&quot;result&quot;:{&quot;windowId&quot;:1,&quot;bounds&quot;:{&quot;left&quot;:0,&quot;top&quot;:0,&quot;width&quot;:1279,&quot;height&quot;:719,&quot;windowState&quot;:&quot;normal&quot;}},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:24.092 &gt;&gt; {&quot;id&quot;:6,&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;,&quot;method&quot;:&quot;Page.navigate&quot;,&quot;params&quot;:{&quot;url&quot;:&quot;https:\/\/www.bing.com&quot;}}
+09:18:30.243 &lt;&lt; {&quot;id&quot;:6,&quot;result&quot;:{&quot;frameId&quot;:&quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;,&quot;loaderId&quot;:&quot;C1713EA69A85C6D5542B8E40E17864AE&quot;},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:30.268 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextsCleared&quot;,&quot;params&quot;:{},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:30.269 &lt;&lt; {&quot;method&quot;:&quot;Page.frameStartedLoading&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:30.359 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextsCleared&quot;,&quot;params&quot;:{},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:30.378 &lt;&lt; {&quot;method&quot;:&quot;Page.frameNavigated&quot;,&quot;params&quot;:{&quot;frame&quot;:{&quot;id&quot;:&quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;,&quot;loaderId&quot;:&quot;C1713EA69A85C6D5542B8E40E17864AE&quot;,&quot;url&quot;:&quot;https://www.bing.com/&quot;,&quot;domainAndRegistry&quot;:&quot;bing.com&quot;,&quot;securityOrigin&quot;:&quot;https://www.bing.com&quot;,&quot;mimeType&quot;:&quot;text/html&quot;,&quot;adFrameType&quot;:&quot;none&quot;,&quot;secureContextType&quot;:&quot;Secure&quot;,&quot;crossOriginIsolatedContextType&quot;:&quot;NotIsolated&quot;,&quot;gatedAPIFeatures&quot;:[&quot;SharedArrayBuffers&quot;,&quot;SharedArrayBuffersTransferAllowed&quot;]}},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:30.392 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextCreated&quot;,&quot;params&quot;:{&quot;context&quot;:{&quot;id&quot;:1,&quot;origin&quot;:&quot;https://www.bing.com&quot;,&quot;name&quot;:&quot;&quot;,&quot;uniqueId&quot;:&quot;6501389159886326297.-6605515034957672348&quot;,&quot;auxData&quot;:{&quot;isDefault&quot;:true,&quot;type&quot;:&quot;default&quot;,&quot;frameId&quot;:&quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;}}},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:30.575 &lt;&lt; {&quot;method&quot;:&quot;Page.domContentEventFired&quot;,&quot;params&quot;:{&quot;timestamp&quot;:677.197242},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">delay(5000)</span>
+
+  <span class="lead-duration duration">5.768</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-5" class="collapse collapsable-details">
+        <pre>09:18:30.883 &lt;&lt; {&quot;method&quot;:&quot;Page.loadEventFired&quot;,&quot;params&quot;:{&quot;timestamp&quot;:677.580319},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:30.884 &lt;&lt; {&quot;method&quot;:&quot;Page.frameStoppedLoading&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:31.769 &lt;&lt; {&quot;method&quot;:&quot;Page.frameAttached&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;DFEE0289589E71A63C6BE652B03705E3&quot;,&quot;parentFrameId&quot;:&quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;,&quot;stack&quot;:{&quot;callFrames&quot;:[{&quot;functionName&quot;:&quot;&quot;,&quot;scriptId&quot;:&quot;8&quot;,&quot;url&quot;:&quot;https://r.bing.com/rp/t3AZrPm6P8cWJzaHDi7qWyH9DDo.br.js&quot;,&quot;lineNumber&quot;:0,&quot;columnNumber&quot;:7927},{&quot;functionName&quot;:&quot;&quot;,&quot;scriptId&quot;:&quot;8&quot;,&quot;url&quot;:&quot;https://r.bing.com/rp/t3AZrPm6P8cWJzaHDi7qWyH9DDo.br.js&quot;,&quot;lineNumber&quot;:0,&quot;columnNumber&quot;:7601},{&quot;functionName&quot;:&quot;&quot;,&quot;scriptId&quot;:&quot;8&quot;,&quot;url&quot;:&quot;https://r.bing.com/rp/t3AZrPm6P8cWJzaHDi7qWyH9DDo.br.js&quot;,&quot;lineNumber&quot;:0,&quot;columnNumber&quot;:20101}]}},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:31.769 &lt;&lt; {&quot;method&quot;:&quot;Page.frameStartedLoading&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;DFEE0289589E71A63C6BE652B03705E3&quot;},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:31.854 &lt;&lt; {&quot;method&quot;:&quot;Page.frameNavigated&quot;,&quot;params&quot;:{&quot;frame&quot;:{&quot;id&quot;:&quot;DFEE0289589E71A63C6BE652B03705E3&quot;,&quot;parentId&quot;:&quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;,&quot;loaderId&quot;:&quot;78050F60FE1ADEC0D6172C274A9BBB2D&quot;,&quot;name&quot;:&quot;&quot;,&quot;url&quot;:&quot;about:srcdoc&quot;,&quot;domainAndRegistry&quot;:&quot;&quot;,&quot;securityOrigin&quot;:&quot;://&quot;,&quot;mimeType&quot;:&quot;text/html&quot;,&quot;adFrameType&quot;:&quot;none&quot;,&quot;secureContextType&quot;:&quot;Secure&quot;,&quot;crossOriginIsolatedContextType&quot;:&quot;NotIsolated&quot;,&quot;gatedAPIFeatures&quot;:[&quot;SharedArrayBuffers&quot;,&quot;SharedArrayBuffersTransferAllowed&quot;]}},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:31.855 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextCreated&quot;,&quot;params&quot;:{&quot;context&quot;:{&quot;id&quot;:2,&quot;origin&quot;:&quot;https://www.bing.com&quot;,&quot;name&quot;:&quot;&quot;,&quot;uniqueId&quot;:&quot;-8809413781375340893.673736021496815930&quot;,&quot;auxData&quot;:{&quot;isDefault&quot;:true,&quot;type&quot;:&quot;default&quot;,&quot;frameId&quot;:&quot;DFEE0289589E71A63C6BE652B03705E3&quot;}}},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:31.896 &lt;&lt; {&quot;method&quot;:&quot;Page.frameStoppedLoading&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;DFEE0289589E71A63C6BE652B03705E3&quot;},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:31.908 &lt;&lt; {&quot;method&quot;:&quot;Page.frameDetached&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;DFEE0289589E71A63C6BE652B03705E3&quot;,&quot;reason&quot;:&quot;remove&quot;},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:31.909 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextDestroyed&quot;,&quot;params&quot;:{&quot;executionContextId&quot;:2},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:33.497 &lt;&lt; {&quot;method&quot;:&quot;Page.frameAttached&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;A12635A6AD1E738E5F9C78C21A729D73&quot;,&quot;parentFrameId&quot;:&quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;,&quot;stack&quot;:{&quot;callFrames&quot;:[{&quot;functionName&quot;:&quot;t&quot;,&quot;scriptId&quot;:&quot;40&quot;,&quot;url&quot;:&quot;https://r.bing.com/rp/V_fBQ_iVmAgE_Ta_T-6BNXc0ZY4.br.js&quot;,&quot;lineNumber&quot;:0,&quot;columnNumber&quot;:273},{&quot;functionName&quot;:&quot;i&quot;,&quot;scriptId&quot;:&quot;40&quot;,&quot;url&quot;:&quot;https://r.bing.com/rp/V_fBQ_iVmAgE_Ta_T-6BNXc0ZY4.br.js&quot;,&quot;lineNumber&quot;:0,&quot;columnNumber&quot;:454},{&quot;functionName&quot;:&quot;e&quot;,&quot;scriptId&quot;:&quot;6&quot;,&quot;url&quot;:&quot;https://www.bing.com/rp/CU7bDmVsW1tCcF5xVu9DdmUrf94.br.js&quot;,&quot;lineNumber&quot;:0,&quot;columnNumber&quot;:2671},{&quot;functionName&quot;:&quot;o&quot;,&quot;scriptId&quot;:&quot;6&quot;,&quot;url&quot;:&quot;https://www.bing.com/rp/CU7bDmVsW1tCcF5xVu9DdmUrf94.br.js&quot;,&quot;lineNumber&quot;:0,&quot;columnNumber&quot;:2904},{&quot;functionName&quot;:&quot;&quot;,&quot;scriptId&quot;:&quot;42&quot;,&quot;url&quot;:&quot;&quot;,&quot;lineNumber&quot;:1,&quot;columnNumber&quot;:871},{&quot;functionName&quot;:&quot;&quot;,&quot;scriptId&quot;:&quot;42&quot;,&quot;url&quot;:&quot;&quot;,&quot;lineNumber&quot;:1,&quot;columnNumber&quot;:905},{&quot;functionName&quot;:&quot;at&quot;,&quot;scriptId&quot;:&quot;6&quot;,&quot;url&quot;:&quot;https://www.bing.com/rp/CU7bDmVsW1tCcF5xVu9DdmUrf94.br.js&quot;,&quot;lineNumber&quot;:0,&quot;columnNumber&quot;:10167},{&quot;functionName&quot;:&quot;hi&quot;,&quot;s ...
+09:18:33.498 &lt;&lt; {&quot;method&quot;:&quot;Page.frameStartedLoading&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;A12635A6AD1E738E5F9C78C21A729D73&quot;},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:34.214 &lt;&lt; {&quot;method&quot;:&quot;Page.frameAttached&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;06AF38C7FA0443BFA2E513825F98B494&quot;,&quot;parentFrameId&quot;:&quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;,&quot;stack&quot;:{&quot;callFrames&quot;:[{&quot;functionName&quot;:&quot;wlc&quot;,&quot;scriptId&quot;:&quot;38&quot;,&quot;url&quot;:&quot;&quot;,&quot;lineNumber&quot;:1,&quot;columnNumber&quot;:235},{&quot;functionName&quot;:&quot;f&quot;,&quot;scriptId&quot;:&quot;39&quot;,&quot;url&quot;:&quot;https://r.bing.com/rp/8CgcSSLayxEVUBf0swP_bQGMId8.br.js&quot;,&quot;lineNumber&quot;:0,&quot;columnNumber&quot;:79}]}},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:34.215 &lt;&lt; {&quot;method&quot;:&quot;Page.frameStartedLoading&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;06AF38C7FA0443BFA2E513825F98B494&quot;},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:34.566 &lt;&lt; {&quot;method&quot;:&quot;Page.frameStoppedLoading&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;A12635A6AD1E738E5F9C78C21A729D73&quot;},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:34.567 &lt;&lt; {&quot;method&quot;:&quot;Page.frameDetached&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;A12635A6AD1E738E5F9C78C21A729D73&quot;,&quot;reason&quot;:&quot;swap&quot;},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:34.640 &lt;&lt; {&quot;method&quot;:&quot;Page.frameAttached&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;A12635A6AD1E738E5F9C78C21A729D73&quot;,&quot;parentFrameId&quot;:&quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:35.029 &lt;&lt; {&quot;method&quot;:&quot;Page.frameStartedLoading&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;A12635A6AD1E738E5F9C78C21A729D73&quot;},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:35.080 &lt;&lt; {&quot;method&quot;:&quot;Page.frameNavigated&quot;,&quot;params&quot;:{&quot;frame&quot;:{&quot;id&quot;:&quot;A12635A6AD1E738E5F9C78C21A729D73&quot;,&quot;parentId&quot;:&quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;,&quot;loaderId&quot;:&quot;4E90BC35F712A1424674701E0633DDE9&quot;,&quot;name&quot;:&quot;aadssofr&quot;,&quot;url&quot;:&quot;https://www.bing.com/orgid/idtoken/conditional&quot;,&quot;domainAndRegistry&quot;:&quot;bing.com&quot;,&quot;securityOrigin&quot;:&quot;https://www.bing.com&quot;,&quot;mimeType&quot;:&quot;text/html&quot;,&quot;adFrameType&quot;:&quot;none&quot;,&quot;secureContextType&quot;:&quot;Secure&quot;,&quot;crossOriginIsolatedContextType&quot;:&quot;NotIsolated&quot;,&quot;gatedAPIFeatures&quot;:[&quot;SharedArrayBuffers&quot;,&quot;SharedArrayBuffersTransferAllowed&quot;]}},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:35.081 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextCreated&quot;,&quot;params&quot;:{&quot;context&quot;:{&quot;id&quot;:3,&quot;origin&quot;:&quot;https://www.bing.com&quot;,&quot;name&quot;:&quot;&quot;,&quot;uniqueId&quot;:&quot;-4321185602715931757.3186659979238731488&quot;,&quot;auxData&quot;:{&quot;isDefault&quot;:true,&quot;type&quot;:&quot;default&quot;,&quot;frameId&quot;:&quot;A12635A6AD1E738E5F9C78C21A729D73&quot;}}},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:35.087 &lt;&lt; {&quot;method&quot;:&quot;Page.frameStoppedLoading&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;A12635A6AD1E738E5F9C78C21A729D73&quot;},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:35.429 &lt;&lt; {&quot;method&quot;:&quot;Page.frameNavigated&quot;,&quot;params&quot;:{&quot;frame&quot;:{&quot;id&quot;:&quot;06AF38C7FA0443BFA2E513825F98B494&quot;,&quot;parentId&quot;:&quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;,&quot;loaderId&quot;:&quot;D37272F1B30862FB9EAE1E68D94D62CC&quot;,&quot;name&quot;:&quot;&quot;,&quot;url&quot;:&quot;https://www.bing.com/secure/Passport.aspx?popup=1&amp;ssl=1&quot;,&quot;domainAndRegistry&quot;:&quot;bing.com&quot;,&quot;securityOrigin&quot;:&quot;https://www.bing.com&quot;,&quot;mimeType&quot;:&quot;text/html&quot;,&quot;adFrameType&quot;:&quot;none&quot;,&quot;secureContextType&quot;:&quot;Secure&quot;,&quot;crossOriginIsolatedContextType&quot;:&quot;NotIsolated&quot;,&quot;gatedAPIFeatures&quot;:[&quot;SharedArrayBuffers&quot;,&quot;SharedArrayBuffersTransferAllowed&quot;]}},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:35.430 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextCreated&quot;,&quot;params&quot;:{&quot;context&quot;:{&quot;id&quot;:4,&quot;origin&quot;:&quot;https://www.bing.com&quot;,&quot;name&quot;:&quot;&quot;,&quot;uniqueId&quot;:&quot;3307220823655590603.-416058837931333472&quot;,&quot;auxData&quot;:{&quot;isDefault&quot;:true,&quot;type&quot;:&quot;default&quot;,&quot;frameId&quot;:&quot;06AF38C7FA0443BFA2E513825F98B494&quot;}}},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:35.564 &lt;&lt; {&quot;method&quot;:&quot;Page.frameStoppedLoading&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;06AF38C7FA0443BFA2E513825F98B494&quot;},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">screenshot()</span>
+
+  <span class="lead-duration duration">1.844</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>09:18:36.361 &gt;&gt; {&quot;id&quot;:7,&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;,&quot;method&quot;:&quot;Page.captureScreenshot&quot;}
+09:18:38.118 &lt;&lt; {&quot;id&quot;:7,&quot;result&quot;:{&quot;data&quot;:&quot;iVBORw0KGgoAAAANSUhEUgAABPcAAAJ6CAYAAABE5Kf+AAAAAXNSR0IArs4c6QAAIABJREFUeJykvVuPLEmS3/czc/eIzKo6t77M9u6qZ8EVJIIQBL2LL9KT9LQfdiVAX4ASCOhBokQCkihSq93lzs5MT1/OpTIzwt1MD2YeWadnKBBkzpw+VXWyIiPc7fq3v5nLP/5v/iu/Xa9oKfyhl4jkF/kHB4RSFVXFbSCqzLfZGEgR3KGoMswQQFXpvaMqaCns2465ISr0sWNmiIP2G69955dfPPL66cRl2/nthyv/+jfP3LxAXdhtoAo+jGIGPhBXhII5uHvct/hx/6qCqlJKPIiqIiq4QC01vjbH3dGi4PGcZoOe14T4sQ3D82fujlusiptTRHGz+N4dd8Msfpd8f36DOIjENYW8FqAiIHJcH4sNOK7lTrwzP8McxGM/PLZI1BEk9yLWoRQQJD5DYx0kP0cl9uVYLxFEFHeL7VdFiyKioCEXqooUjc+Z6+COWc/rkn8bqgrE9bRIfn9/zXuMZ879EgUcG47l+o4xQGONR+6Ru1NcMXfMxrGPpZSQKxVabYgIokbReMZaSkizCGZ27NEwi3XP/bjv2Yv35r/ZGPG3kfswL2PYgFJzzXLPVYl7yjWde1xy7SU+JNYacBzrhuW6tNrovWMOY4y4l0HKoOM2MPdjnyUuh3ns6XBDEBCYn2C5jiJ3OVZtx3OrSMoL1KrUWmm1UdZKWRqlVWortFYpNd4rRY/3aqlQlDFgjE5JMzKGc9139r6xaMF9Q+lov7KUuIYNY992xjC6wz4sdBxh64ainKWBw813hkIZndcivDuvrCflx8tHfvNhZ6fQAVdBpaDuqDuYI2rx87Rlc8vnGpSU8/i/HHoiqhQt7PsIm2CCGex7Ryi4QzfHRBk2YiMAcVJO7fiZv5S3aVte6MO8J1VNHUo9LCEvtRaklrDJRam1UUqhtHLYP1VFcMwNLWD2Uu8ES5myMd ...
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-7" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-1064137231.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-7" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_-1064137231.png">
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">driver 'https://www.google.com'</span>
+
+  <span class="lead-duration duration">2.228</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-8">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-8" class="collapse collapsable-details">
+        <pre>09:18:38.195 &gt;&gt; {&quot;id&quot;:8,&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;,&quot;method&quot;:&quot;Page.navigate&quot;,&quot;params&quot;:{&quot;url&quot;:&quot;https:\/\/www.google.com&quot;}}
+09:18:38.906 &lt;&lt; {&quot;id&quot;:8,&quot;result&quot;:{&quot;frameId&quot;:&quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;,&quot;loaderId&quot;:&quot;D8A9C04A2A986E62178B70645B05C148&quot;},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:38.922 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextsCleared&quot;,&quot;params&quot;:{},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:38.922 &lt;&lt; {&quot;method&quot;:&quot;Page.frameStartedLoading&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:39.027 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextsCleared&quot;,&quot;params&quot;:{},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:39.028 &lt;&lt; {&quot;method&quot;:&quot;Page.frameNavigated&quot;,&quot;params&quot;:{&quot;frame&quot;:{&quot;id&quot;:&quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;,&quot;loaderId&quot;:&quot;D8A9C04A2A986E62178B70645B05C148&quot;,&quot;url&quot;:&quot;https://www.google.com/&quot;,&quot;domainAndRegistry&quot;:&quot;google.com&quot;,&quot;securityOrigin&quot;:&quot;https://www.google.com&quot;,&quot;mimeType&quot;:&quot;text/html&quot;,&quot;adFrameType&quot;:&quot;none&quot;,&quot;secureContextType&quot;:&quot;Secure&quot;,&quot;crossOriginIsolatedContextType&quot;:&quot;NotIsolated&quot;,&quot;gatedAPIFeatures&quot;:[&quot;SharedArrayBuffers&quot;,&quot;SharedArrayBuffersTransferAllowed&quot;]}},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:39.029 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextCreated&quot;,&quot;params&quot;:{&quot;context&quot;:{&quot;id&quot;:1,&quot;origin&quot;:&quot;https://www.google.com&quot;,&quot;name&quot;:&quot;&quot;,&quot;uniqueId&quot;:&quot;7312326347127512236.5790948635721624610&quot;,&quot;auxData&quot;:{&quot;isDefault&quot;:true,&quot;type&quot;:&quot;default&quot;,&quot;frameId&quot;:&quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;}}},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:40.416 &lt;&lt; {&quot;method&quot;:&quot;Page.navigatedWithinDocument&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;,&quot;url&quot;:&quot;https://www.google.com/&quot;},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:40.417 &lt;&lt; {&quot;method&quot;:&quot;Page.domContentEventFired&quot;,&quot;params&quot;:{&quot;timestamp&quot;:686.93289},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">maximize()</span>
+
+  <span class="lead-duration duration">0.147</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>09:18:40.427 &gt;&gt; {&quot;id&quot;:9,&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;,&quot;method&quot;:&quot;Browser.setWindowBounds&quot;,&quot;params&quot;:{&quot;windowId&quot;:1,&quot;bounds&quot;:{&quot;windowState&quot;:&quot;maximized&quot;}}}
+09:18:40.456 &lt;&lt; {&quot;id&quot;:9,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">screenshot()</span>
+
+  <span class="lead-duration duration">0.876</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-10">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-10" class="collapse collapsable-details">
+        <pre>09:18:40.570 &gt;&gt; {&quot;id&quot;:10,&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;,&quot;method&quot;:&quot;Page.captureScreenshot&quot;}
+09:18:40.653 &lt;&lt; {&quot;method&quot;:&quot;Page.frameResized&quot;,&quot;params&quot;:{},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:41.396 &lt;&lt; {&quot;id&quot;:10,&quot;result&quot;:{&quot;data&quot;:&quot;iVBORw0KGgoAAAANSUhEUgAABQAAAAJ0CAYAAABN8I6uAAAAAXNSR0IArs4c6QAAIABJREFUeJzs3XeUVeXZ/vHv3qfX6YXeiyKgIqCgSMCKGrHGhi3WJK+xxBj9xWjUaEzMazTlTcSSxB67YKMrKr0JCAy9DMwwvZxe9u+PPYwQNLYBkuH6rHXWzNmzy7P3weVwcT/PbViWZSEiIiIiIiIiIiLtknmgByAiIiIiIiIiIiL7jgJAERERERERERGRdkwBoIiIiIiIiIiISDumAFBERERERERERKQdUwAoIiIiIiIiIiLSjikAFBERERERERERaccUAIqIiIiIiIiIiLRjCgBFRERERERERETaMQWAIiIiIiIiIiIi7ZgCQBERERERERERkXZMAaCIiIiIiIiIiEg75jzQAxARERERERERkf9cUz9N8KcZEdZUpGmMWwd6OO1a2GvQr9TJD8cEOPFQT5ud17AsS5+ciIiIiIiIiIjs5d0VCb7/t/oDPYyD0hOX53LKYW0TAmoKsIiIiIiIiIiIfK4/zYgc6CEctNry2SsAFBERERERERGRz7V2Z/pAD+Gg1ZbPXgGgiIiIiIiIiIh8riat+XfAtOWzVwAoIiIiIiIiIiLSjikAFBERERERERERaccUAIqIiIiIiIiIiLRjCgBFRERERERERETaMQWAIiIiIiIiIiIi7ZjzQA9ARERERERERORgtXpNGY8/+Q8ArrryUvr36/uNtov8O6oAFBERERERERE5QCY++Xeqa2qorqlpDfa+yXaRf+c/LgAcN+4M/v6Ppw/0MERERERERERE9rloNNr6vYX1jbcfLKbcXMAVI/375Nxhr0H5QyX0K21/E2YPSAA4b958evTswy233Lrfr/3008+STCb32fnnzZ/PpZdewZFDhtG7T3+OPuZY7vvV/SQSidZ9Zs6cxYaNG/fZGERERERERKR9qKmp4Re/+AXHHnss/fv3Z9iwYVxzzTUsX ...
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-11" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-880474802.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-11" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_-880474802.png">
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">click(&quot;//a[contains(text(), 'Store')]&quot;)</span>
+
+  <span class="lead-duration duration">0.325</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>09:18:41.449 &gt;&gt; {&quot;id&quot;:11,&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;,&quot;method&quot;:&quot;Runtime.evaluate&quot;,&quot;params&quot;:{&quot;expression&quot;:&quot;document.evaluate(\&quot;\/\/a[contains(text(), 'Store')]\&quot;, document, null, 9, null).singleNodeValue.click()&quot;,&quot;returnByValue&quot;:true}}
+09:18:41.644 &lt;&lt; {&quot;method&quot;:&quot;Page.frameScheduledNavigation&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;,&quot;delay&quot;:0,&quot;reason&quot;:&quot;anchorClick&quot;,&quot;url&quot;:&quot;https://store.google.com/US?utm_source=hp_header&amp;utm_medium=google_ooo&amp;utm_campaign=GS100042&amp;hl=en-US&quot;},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:41.645 &lt;&lt; {&quot;method&quot;:&quot;Page.frameRequestedNavigation&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;,&quot;reason&quot;:&quot;anchorClick&quot;,&quot;url&quot;:&quot;https://store.google.com/US?utm_source=hp_header&amp;utm_medium=google_ooo&amp;utm_campaign=GS100042&amp;hl=en-US&quot;,&quot;disposition&quot;:&quot;currentTab&quot;},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:41.689 &lt;&lt; {&quot;method&quot;:&quot;Page.frameClearedScheduledNavigation&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:41.690 &lt;&lt; {&quot;id&quot;:11,&quot;result&quot;:{&quot;result&quot;:{&quot;type&quot;:&quot;undefined&quot;}},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">delay(3000)</span>
+
+  <span class="lead-duration duration">3.004</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-13">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-13" class="collapse collapsable-details">
+        <pre>09:18:42.234 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextsCleared&quot;,&quot;params&quot;:{},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:42.236 &lt;&lt; {&quot;method&quot;:&quot;Page.frameNavigated&quot;,&quot;params&quot;:{&quot;frame&quot;:{&quot;id&quot;:&quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;,&quot;loaderId&quot;:&quot;A0A9BB52BBB95974D20530BB039AC49A&quot;,&quot;url&quot;:&quot;https://store.google.com/US?utm_source=hp_header&amp;utm_medium=google_ooo&amp;utm_campaign=GS100042&amp;hl=en-US&quot;,&quot;domainAndRegistry&quot;:&quot;google.com&quot;,&quot;securityOrigin&quot;:&quot;https://store.google.com&quot;,&quot;mimeType&quot;:&quot;text/html&quot;,&quot;adFrameType&quot;:&quot;none&quot;,&quot;secureContextType&quot;:&quot;Secure&quot;,&quot;crossOriginIsolatedContextType&quot;:&quot;NotIsolated&quot;,&quot;gatedAPIFeatures&quot;:[&quot;SharedArrayBuffers&quot;,&quot;SharedArrayBuffersTransferAllowed&quot;]}},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:42.237 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextCreated&quot;,&quot;params&quot;:{&quot;context&quot;:{&quot;id&quot;:2,&quot;origin&quot;:&quot;https://store.google.com&quot;,&quot;name&quot;:&quot;&quot;,&quot;uniqueId&quot;:&quot;-6768670367995161768.-6362486456785967750&quot;,&quot;auxData&quot;:{&quot;isDefault&quot;:true,&quot;type&quot;:&quot;default&quot;,&quot;frameId&quot;:&quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;}}},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:44.428 &lt;&lt; {&quot;method&quot;:&quot;Page.domContentEventFired&quot;,&quot;params&quot;:{&quot;timestamp&quot;:691.125001},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:44.769 &lt;&lt; {&quot;method&quot;:&quot;Runtime.consoleAPICalled&quot;,&quot;params&quot;:{&quot;type&quot;:&quot;log&quot;,&quot;args&quot;:[{&quot;type&quot;:&quot;string&quot;,&quot;value&quot;:&quot;%c%s&quot;},{&quot;type&quot;:&quot;string&quot;,&quot;value&quot;:&quot;color: red; background: yellow; font-size: 24px;&quot;},{&quot;type&quot;:&quot;string&quot;,&quot;value&quot;:&quot;WARNING!&quot;}],&quot;executionContextId&quot;:2,&quot;timestamp&quot;:1.635859124765548e+12,&quot;stackTrace&quot;:{&quot;callFrames&quot;:[{&quot;functionName&quot;:&quot;c&quot;,&quot;scriptId&quot;:&quot;74&quot;,&quot;url&quot;:&quot;https://www.gstatic.com/_/mss/boq-gstore/_/js/k=boq-gstore.Gstore.en_US.qL3EV770s2g.2021.O/am=MFeU9v_nrQKA/d=1/excm=_b,_tp,homepageview/ed=1/dg=0/wt=2/esmo=1/rs=AK-qVtGssRF-HH9GuAB1dAr6Yz08OiL9xQ/m=_b,_tp&quot;,&quot;lineNumber&quot;:621,&quot;columnNumber&quot;:251}]}},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:44.771 [console] %c%s
+09:18:44.771 [console] color: red; background: yellow; font-size: 24px;
+09:18:44.772 [console] WARNING!
+09:18:44.774 &lt;&lt; {&quot;method&quot;:&quot;Runtime.consoleAPICalled&quot;,&quot;params&quot;:{&quot;type&quot;:&quot;log&quot;,&quot;args&quot;:[{&quot;type&quot;:&quot;string&quot;,&quot;value&quot;:&quot;%c%s&quot;},{&quot;type&quot;:&quot;string&quot;,&quot;value&quot;:&quot;font-size: 18px;&quot;},{&quot;type&quot;:&quot;string&quot;,&quot;value&quot;:&quot;Using this console may allow attackers to impersonate you and steal your information using an attack called Self-XSS.\nDo not enter or paste code that you do not understand.&quot;}],&quot;executionContextId&quot;:2,&quot;timestamp&quot;:1.635859124766875e+12,&quot;stackTrace&quot;:{&quot;callFrames&quot;:[{&quot;functionName&quot;:&quot;c&quot;,&quot;scriptId&quot;:&quot;74&quot;,&quot;url&quot;:&quot;https://www.gstatic.com/_/mss/boq-gstore/_/js/k=boq-gstore.Gstore.en_US.qL3EV770s2g.2021.O/am=MFeU9v_nrQKA/d=1/excm=_b,_tp,homepageview/ed=1/dg=0/wt=2/esmo=1/rs=AK-qVtGssRF-HH9GuAB1dAr6Yz08OiL9xQ/m=_b,_tp&quot;,&quot;lineNumber&quot;:621,&quot;columnNumber&quot;:251}]}},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:44.775 [console] %c%s
+09:18:44.775 [console] font-size: 18px;
+09:18:44.775 [console] Using this console may allow attackers to impersonate you and steal your information using an attack called Self-XSS.
+Do not enter or paste code that you do not understand.
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">back()</span>
+
+  <span class="lead-duration duration">0.631</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-14">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-14" class="collapse collapsable-details">
+        <pre>09:18:44.777 &gt;&gt; {&quot;id&quot;:12,&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;,&quot;method&quot;:&quot;Page.getNavigationHistory&quot;}
+09:18:44.791 &lt;&lt; {&quot;id&quot;:12,&quot;result&quot;:{&quot;currentIndex&quot;:3,&quot;entries&quot;:[{&quot;id&quot;:1,&quot;url&quot;:&quot;chrome://welcome/&quot;,&quot;userTypedURL&quot;:&quot;chrome://welcome/?variant=everywhere&quot;,&quot;title&quot;:&quot;Welcome to Chrome&quot;,&quot;transitionType&quot;:&quot;auto_toplevel&quot;},{&quot;id&quot;:11,&quot;url&quot;:&quot;https://www.bing.com/&quot;,&quot;userTypedURL&quot;:&quot;https://www.bing.com/&quot;,&quot;title&quot;:&quot;Bing&quot;,&quot;transitionType&quot;:&quot;typed&quot;},{&quot;id&quot;:13,&quot;url&quot;:&quot;https://www.google.com/&quot;,&quot;userTypedURL&quot;:&quot;https://www.google.com/&quot;,&quot;title&quot;:&quot;Google&quot;,&quot;transitionType&quot;:&quot;typed&quot;},{&quot;id&quot;:15,&quot;url&quot;:&quot;https://store.google.com/US?utm_source=hp_header&amp;utm_medium=google_ooo&amp;utm_campaign=GS100042&amp;hl=en-US&quot;,&quot;userTypedURL&quot;:&quot;https://store.google.com/US?utm_source=hp_header&amp;utm_medium=google_ooo&amp;utm_campaign=GS100042&amp;hl=en-US&quot;,&quot;title&quot;:&quot;Google Store for Google Made Devices &amp; Accessories&quot;,&quot;transitionType&quot;:&quot;link&quot;}]},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:44.792 &gt;&gt; {&quot;id&quot;:13,&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;,&quot;method&quot;:&quot;Page.navigateToHistoryEntry&quot;,&quot;params&quot;:{&quot;entryId&quot;:13}}
+09:18:44.795 &lt;&lt; {&quot;id&quot;:13,&quot;result&quot;:{},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:45.029 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextsCleared&quot;,&quot;params&quot;:{},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:45.030 &lt;&lt; {&quot;method&quot;:&quot;Page.frameNavigated&quot;,&quot;params&quot;:{&quot;frame&quot;:{&quot;id&quot;:&quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;,&quot;loaderId&quot;:&quot;1F531781AEC3344EEC6BB87447DE5505&quot;,&quot;url&quot;:&quot;https://www.google.com/&quot;,&quot;domainAndRegistry&quot;:&quot;google.com&quot;,&quot;securityOrigin&quot;:&quot;https://www.google.com&quot;,&quot;mimeType&quot;:&quot;text/html&quot;,&quot;adFrameType&quot;:&quot;none&quot;,&quot;secureContextType&quot;:&quot;Secure&quot;,&quot;crossOriginIsolatedContextType&quot;:&quot;NotIsolated&quot;,&quot;gatedAPIFeatures&quot;:[&quot;SharedArrayBuffers&quot;,&quot;SharedArrayBuffersTransferAllowed&quot;]}},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:45.030 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextCreated&quot;,&quot;params&quot;:{&quot;context&quot;:{&quot;id&quot;:3,&quot;origin&quot;:&quot;https://www.google.com&quot;,&quot;name&quot;:&quot;&quot;,&quot;uniqueId&quot;:&quot;6719200994253065039.7864064652784970550&quot;,&quot;auxData&quot;:{&quot;isDefault&quot;:true,&quot;type&quot;:&quot;default&quot;,&quot;frameId&quot;:&quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;}}},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:45.406 &lt;&lt; {&quot;method&quot;:&quot;Page.domContentEventFired&quot;,&quot;params&quot;:{&quot;timestamp&quot;:692.057058},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">click(&quot;//a[contains(text(), 'About')]&quot;)</span>
+
+  <span class="lead-duration duration">0.248</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>09:18:45.420 &gt;&gt; {&quot;id&quot;:14,&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;,&quot;method&quot;:&quot;Runtime.evaluate&quot;,&quot;params&quot;:{&quot;expression&quot;:&quot;document.evaluate(\&quot;\/\/a[contains(text(), 'About')]\&quot;, document, null, 9, null).singleNodeValue.click()&quot;,&quot;returnByValue&quot;:true}}
+09:18:45.586 &lt;&lt; {&quot;method&quot;:&quot;Page.frameScheduledNavigation&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;,&quot;delay&quot;:0,&quot;reason&quot;:&quot;anchorClick&quot;,&quot;url&quot;:&quot;https://about.google/?fg=1&amp;utm_source=google-US&amp;utm_medium=referral&amp;utm_campaign=hp-header&quot;},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:45.586 &lt;&lt; {&quot;method&quot;:&quot;Page.frameRequestedNavigation&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;,&quot;reason&quot;:&quot;anchorClick&quot;,&quot;url&quot;:&quot;https://about.google/?fg=1&amp;utm_source=google-US&amp;utm_medium=referral&amp;utm_campaign=hp-header&quot;,&quot;disposition&quot;:&quot;currentTab&quot;},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:45.608 &lt;&lt; {&quot;method&quot;:&quot;Page.frameClearedScheduledNavigation&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:45.642 &lt;&lt; {&quot;id&quot;:14,&quot;result&quot;:{&quot;result&quot;:{&quot;type&quot;:&quot;undefined&quot;}},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-* passed">
+  <span class="keyword indention">*</span>
+  <span class="name">delay(3000)</span>
+
+  <span class="lead-duration duration">3.015</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="docstring indention">
+      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-16">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-16" class="collapse collapsable-details">
+        <pre>09:18:46.003 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextsCleared&quot;,&quot;params&quot;:{},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:46.006 &lt;&lt; {&quot;method&quot;:&quot;Page.frameStartedLoading&quot;,&quot;params&quot;:{&quot;frameId&quot;:&quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:46.059 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextsCleared&quot;,&quot;params&quot;:{},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:46.060 &lt;&lt; {&quot;method&quot;:&quot;Page.frameNavigated&quot;,&quot;params&quot;:{&quot;frame&quot;:{&quot;id&quot;:&quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;,&quot;loaderId&quot;:&quot;408E12ECDE99C2BBB9CFE2926310A594&quot;,&quot;url&quot;:&quot;https://about.google/?fg=1&amp;utm_source=google-US&amp;utm_medium=referral&amp;utm_campaign=hp-header&quot;,&quot;domainAndRegistry&quot;:&quot;about.google&quot;,&quot;securityOrigin&quot;:&quot;https://about.google&quot;,&quot;mimeType&quot;:&quot;text/html&quot;,&quot;adFrameType&quot;:&quot;none&quot;,&quot;secureContextType&quot;:&quot;Secure&quot;,&quot;crossOriginIsolatedContextType&quot;:&quot;NotIsolated&quot;,&quot;gatedAPIFeatures&quot;:[&quot;SharedArrayBuffers&quot;,&quot;SharedArrayBuffersTransferAllowed&quot;]}},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:46.060 &lt;&lt; {&quot;method&quot;:&quot;Runtime.executionContextCreated&quot;,&quot;params&quot;:{&quot;context&quot;:{&quot;id&quot;:1,&quot;origin&quot;:&quot;https://about.google&quot;,&quot;name&quot;:&quot;&quot;,&quot;uniqueId&quot;:&quot;-8449390362406767151.-8712412789655232950&quot;,&quot;auxData&quot;:{&quot;isDefault&quot;:true,&quot;type&quot;:&quot;default&quot;,&quot;frameId&quot;:&quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;}}},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:48.044 &lt;&lt; {&quot;method&quot;:&quot;Runtime.consoleAPICalled&quot;,&quot;params&quot;:{&quot;type&quot;:&quot;warning&quot;,&quot;args&quot;:[{&quot;type&quot;:&quot;string&quot;,&quot;value&quot;:&quot;HaTS may be served with ID:&quot;},{&quot;type&quot;:&quot;string&quot;,&quot;value&quot;:&quot;y58Yu6pPt0gMjUpJXu90VLdD3T1d&quot;},{&quot;type&quot;:&quot;string&quot;,&quot;value&quot;:&quot;ALL_us&quot;}],&quot;executionContextId&quot;:1,&quot;timestamp&quot;:1.635859127894825e+12,&quot;stackTrace&quot;:{&quot;callFrames&quot;:[{&quot;functionName&quot;:&quot;ff.trigger&quot;,&quot;scriptId&quot;:&quot;11&quot;,&quot;url&quot;:&quot;https://about.google/assets-stories-2021/js/index.min.js?cache=435068a&quot;,&quot;lineNumber&quot;:1226,&quot;columnNumber&quot;:52},{&quot;functionName&quot;:&quot;&quot;,&quot;scriptId&quot;:&quot;11&quot;,&quot;url&quot;:&quot;https://about.google/assets-stories-2021/js/index.min.js?cache=435068a&quot;,&quot;lineNumber&quot;:1225,&quot;columnNumber&quot;:760},{&quot;functionName&quot;:&quot;ff&quot;,&quot;scriptId&quot;:&quot;11&quot;,&quot;url&quot;:&quot;https://about.google/assets-stories-2021/js/index.min.js?cache=435068a&quot;,&quot;lineNumber&quot;:1225,&quot;columnNumber&quot;:606},{&quot;functionName&quot;:&quot;&quot;,&quot;scriptId&quot;:&quot;11&quot;,&quot;url&quot;:&quot;https://about.google/assets-stories-2021/js/index.min.js?cache=435068a&quot;,&quot;lineNumber&quot;:1236,&quot;columnNumber&quot;:278},{&quot;functionName&quot;:&quot;&quot;,&quot;scriptId&quot;:&quot;11&quot;,&quot;url&quot;:&quot;https://about.google/assets-stories-2021/js/index.min.js? ...
+09:18:48.045 [console] HaTS may be served with ID:
+09:18:48.045 [console] y58Yu6pPt0gMjUpJXu90VLdD3T1d
+09:18:48.045 [console] ALL_us
+09:18:48.101 &lt;&lt; {&quot;method&quot;:&quot;Runtime.consoleAPICalled&quot;,&quot;params&quot;:{&quot;type&quot;:&quot;warning&quot;,&quot;args&quot;:[{&quot;type&quot;:&quot;string&quot;,&quot;value&quot;:&quot;HaTS may be served with ID:&quot;},{&quot;type&quot;:&quot;string&quot;,&quot;value&quot;:&quot;RzFXDacCD0gMjUpJXu90NuK762Qx&quot;},{&quot;type&quot;:&quot;string&quot;,&quot;value&quot;:&quot;ALL_us&quot;}],&quot;executionContextId&quot;:1,&quot;timestamp&quot;:1.6358591280723528e+12,&quot;stackTrace&quot;:{&quot;callFrames&quot;:[{&quot;functionName&quot;:&quot;ff.trigger&quot;,&quot;scriptId&quot;:&quot;11&quot;,&quot;url&quot;:&quot;https://about.google/assets-stories-2021/js/index.min.js?cache=435068a&quot;,&quot;lineNumber&quot;:1226,&quot;columnNumber&quot;:52},{&quot;functionName&quot;:&quot;&quot;,&quot;scriptId&quot;:&quot;11&quot;,&quot;url&quot;:&quot;https://about.google/assets-stories-2021/js/index.min.js?cache=435068a&quot;,&quot;lineNumber&quot;:1225,&quot;columnNumber&quot;:760},{&quot;functionName&quot;:&quot;ff&quot;,&quot;scriptId&quot;:&quot;11&quot;,&quot;url&quot;:&quot;https://about.google/assets-stories-2021/js/index.min.js?cache=435068a&quot;,&quot;lineNumber&quot;:1225,&quot;columnNumber&quot;:606},{&quot;functionName&quot;:&quot;&quot;,&quot;scriptId&quot;:&quot;11&quot;,&quot;url&quot;:&quot;https://about.google/assets-stories-2021/js/index.min.js?cache=435068a&quot;,&quot;lineNumber&quot;:1236,&quot;columnNumber&quot;:278},{&quot;functionName&quot;:&quot;&quot;,&quot;scriptId&quot;:&quot;11&quot;,&quot;url&quot;:&quot;https://about.google/assets-stories-2021/js/index.min.js ...
+09:18:48.101 [console] HaTS may be served with ID:
+09:18:48.102 [console] RzFXDacCD0gMjUpJXu90NuK762Qx
+09:18:48.102 [console] ALL_us
+09:18:48.216 &lt;&lt; {&quot;method&quot;:&quot;Page.domContentEventFired&quot;,&quot;params&quot;:{&quot;timestamp&quot;:694.887605},&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;}
+09:18:48.678 &gt;&gt; {&quot;id&quot;:15,&quot;sessionId&quot;:&quot;0A9E37440C1AF8D0D1937B3C8B339F2D&quot;,&quot;method&quot;:&quot;Target.closeTarget&quot;,&quot;params&quot;:{&quot;targetId&quot;:&quot;96DDBF650A34D58FA4DE4259258B3FCA&quot;}}
+09:18:48.719 custom target configured, attempting stop()
+09:19:15.516 video file missing: target\karate-chrome_fac1348cf51d\karate.mp4
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-1 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br/>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

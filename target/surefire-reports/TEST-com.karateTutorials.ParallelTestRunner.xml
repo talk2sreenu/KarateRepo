@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.karateTutorials.ParallelTestRunner" time="137.589" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\talk2\SelAutoFramework\KarateFramework\target\test-classes;C:\Users\talk2\SelAutoFramework\KarateFramework\target\classes;C:\Users\talk2\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\talk2\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\talk2\.m2\repository\com\intuit\karate\karate-core\1.2.0.RC1\karate-core-1.2.0.RC1.jar;C:\Users\talk2\.m2\repository\org\graalvm\js\js-scriptengine\21.2.0\js-scriptengine-21.2.0.jar;C:\Users\talk2\.m2\repository\org\graalvm\sdk\graal-sdk\21.2.0\graal-sdk-21.2.0.jar;C:\Users\talk2\.m2\repository\org\graalvm\js\js\21.2.0\js-21.2.0.jar;C:\Users\talk2\.m2\repository\org\graalvm\regex\regex\21.2.0\regex-21.2.0.jar;C:\Users\talk2\.m2\repository\org\graalvm\truffle\truffle-api\21.2.0\truffle-api-21.2.0.jar;C:\Users\talk2\.m2\repository\com\ibm\icu\icu4j\69.1\icu4j-69.1.jar;C:\Users\talk2\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\talk2\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\talk2\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\talk2\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.25\jcl-over-slf4j-1.7.25.jar;C:\Users\talk2\.m2\repository\com\jayway\jsonpath\json-path\2.6.0\json-path-2.6.0.jar;C:\Users\talk2\.m2\repository\net\minidev\json-smart\2.4.7\json-smart-2.4.7.jar;C:\Users\talk2\.m2\repository\net\minidev\accessors-smart\2.4.7\accessors-smart-2.4.7.jar;C:\Users\talk2\.m2\repository\org\ow2\asm\asm\9.1\asm-9.1.jar;C:\Users\talk2\.m2\repository\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\Users\talk2\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\talk2\.m2\repository\org\yaml\snakeyaml\1.29\snakeyaml-1.29.jar;C:\Users\talk2\.m2\repository\de\siegmar\fastcsv\2.0.0\fastcsv-2.0.0.jar;C:\Users\talk2\.m2\repository\info\picocli\picocli\4.6.1\picocli-4.6.1.jar;C:\Users\talk2\.m2\repository\com\intuit\karate\karate-junit4\1.1.0\karate-junit4-1.1.0.jar;C:\Users\talk2\.m2\repository\net\masterthought\cucumber-reporting\5.5.4\cucumber-reporting-5.5.4.jar;C:\Users\talk2\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.12.1\jackson-databind-2.12.1.jar;C:\Users\talk2\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.12.1\jackson-annotations-2.12.1.jar;C:\Users\talk2\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.12.1\jackson-core-2.12.1.jar;C:\Users\talk2\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.12.1\jackson-datatype-jsr310-2.12.1.jar;C:\Users\talk2\.m2\repository\org\apache\velocity\velocity-engine-core\2.3\velocity-engine-core-2.3.jar;C:\Users\talk2\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\talk2\.m2\repository\joda-time\joda-time\2.10.10\joda-time-2.10.10.jar;C:\Users\talk2\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\talk2\.m2\repository\commons-io\commons-io\2.7\commons-io-2.7.jar;C:\Users\talk2\.m2\repository\org\codehaus\plexus\plexus-utils\3.3.0\plexus-utils-3.3.0.jar;C:\Users\talk2\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\talk2\.m2\repository\com\google\guava\guava\30.1.1-jre\guava-30.1.1-jre.jar;C:\Users\talk2\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\talk2\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\talk2\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\talk2\.m2\repository\org\checkerframework\checker-qual\3.8.0\checker-qual-3.8.0.jar;C:\Users\talk2\.m2\repository\com\google\errorprone\error_prone_annotations\2.5.1\error_prone_annotations-2.5.1.jar;C:\Users\talk2\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\talk2\.m2\repository\com\googlecode\owasp-java-html-sanitizer\owasp-java-html-sanitizer\20200713.1\owasp-java-html-sanitizer-20200713.1.jar;C:\Users\talk2\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\talk2\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\talk2\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\talk2\.m2\repository\io\cucumber\cucumber-java\6.10.4\cucumber-java-6.10.4.jar;C:\Users\talk2\.m2\repository\io\cucumber\cucumber-core\6.10.4\cucumber-core-6.10.4.jar;C:\Users\talk2\.m2\repository\io\cucumber\cucumber-gherkin\6.10.4\cucumber-gherkin-6.10.4.jar;C:\Users\talk2\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.10.4\cucumber-gherkin-messages-6.10.4.jar;C:\Users\talk2\.m2\repository\io\cucumber\messages\15.0.0\messages-15.0.0.jar;C:\Users\talk2\.m2\repository\io\cucumber\tag-expressions\3.0.1\tag-expressions-3.0.1.jar;C:\Users\talk2\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\talk2\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;C:\Users\talk2\.m2\repository\io\cucumber\cucumber-plugin\6.10.4\cucumber-plugin-6.10.4.jar;C:\Users\talk2\.m2\repository\io\cucumber\docstring\6.10.4\docstring-6.10.4.jar;C:\Users\talk2\.m2\repository\io\cucumber\html-formatter\13.0.0\html-formatter-13.0.0.jar;C:\Users\talk2\.m2\repository\io\cucumber\create-meta\4.0.0\create-meta-4.0.0.jar;C:\Users\talk2\.m2\repository\org\apiguardian\apiguardian-api\1.1.1\apiguardian-api-1.1.1.jar;C:\Users\talk2\.m2\repository\io\cucumber\cucumber-junit\6.10.4\cucumber-junit-6.10.4.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="karate.env" value="ci"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.11\bin"/>
+    <property name="sun.java.command" value="C:\Users\talk2\AppData\Local\Temp\surefire4300531869422343216\surefirebooter6707987243910129577.jar C:\Users\talk2\AppData\Local\Temp\surefire4300531869422343216 2021-11-02T09-17-07_321-jvmRun1 surefire17692264478303234991tmp surefire_06508444123474239856tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="test" value="com.karateTutorials.ParallelTestRunner"/>
+    <property name="surefire.test.class.path" value="C:\Users\talk2\SelAutoFramework\KarateFramework\target\test-classes;C:\Users\talk2\SelAutoFramework\KarateFramework\target\classes;C:\Users\talk2\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\talk2\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\talk2\.m2\repository\com\intuit\karate\karate-core\1.2.0.RC1\karate-core-1.2.0.RC1.jar;C:\Users\talk2\.m2\repository\org\graalvm\js\js-scriptengine\21.2.0\js-scriptengine-21.2.0.jar;C:\Users\talk2\.m2\repository\org\graalvm\sdk\graal-sdk\21.2.0\graal-sdk-21.2.0.jar;C:\Users\talk2\.m2\repository\org\graalvm\js\js\21.2.0\js-21.2.0.jar;C:\Users\talk2\.m2\repository\org\graalvm\regex\regex\21.2.0\regex-21.2.0.jar;C:\Users\talk2\.m2\repository\org\graalvm\truffle\truffle-api\21.2.0\truffle-api-21.2.0.jar;C:\Users\talk2\.m2\repository\com\ibm\icu\icu4j\69.1\icu4j-69.1.jar;C:\Users\talk2\.m2\repository\ch\qos\logback\logback-classic\1.2.3\logback-classic-1.2.3.jar;C:\Users\talk2\.m2\repository\ch\qos\logback\logback-core\1.2.3\logback-core-1.2.3.jar;C:\Users\talk2\.m2\repository\org\slf4j\slf4j-api\1.7.25\slf4j-api-1.7.25.jar;C:\Users\talk2\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.25\jcl-over-slf4j-1.7.25.jar;C:\Users\talk2\.m2\repository\com\jayway\jsonpath\json-path\2.6.0\json-path-2.6.0.jar;C:\Users\talk2\.m2\repository\net\minidev\json-smart\2.4.7\json-smart-2.4.7.jar;C:\Users\talk2\.m2\repository\net\minidev\accessors-smart\2.4.7\accessors-smart-2.4.7.jar;C:\Users\talk2\.m2\repository\org\ow2\asm\asm\9.1\asm-9.1.jar;C:\Users\talk2\.m2\repository\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\Users\talk2\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\talk2\.m2\repository\org\yaml\snakeyaml\1.29\snakeyaml-1.29.jar;C:\Users\talk2\.m2\repository\de\siegmar\fastcsv\2.0.0\fastcsv-2.0.0.jar;C:\Users\talk2\.m2\repository\info\picocli\picocli\4.6.1\picocli-4.6.1.jar;C:\Users\talk2\.m2\repository\com\intuit\karate\karate-junit4\1.1.0\karate-junit4-1.1.0.jar;C:\Users\talk2\.m2\repository\net\masterthought\cucumber-reporting\5.5.4\cucumber-reporting-5.5.4.jar;C:\Users\talk2\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.12.1\jackson-databind-2.12.1.jar;C:\Users\talk2\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.12.1\jackson-annotations-2.12.1.jar;C:\Users\talk2\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.12.1\jackson-core-2.12.1.jar;C:\Users\talk2\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.12.1\jackson-datatype-jsr310-2.12.1.jar;C:\Users\talk2\.m2\repository\org\apache\velocity\velocity-engine-core\2.3\velocity-engine-core-2.3.jar;C:\Users\talk2\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\talk2\.m2\repository\joda-time\joda-time\2.10.10\joda-time-2.10.10.jar;C:\Users\talk2\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\talk2\.m2\repository\commons-io\commons-io\2.7\commons-io-2.7.jar;C:\Users\talk2\.m2\repository\org\codehaus\plexus\plexus-utils\3.3.0\plexus-utils-3.3.0.jar;C:\Users\talk2\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\talk2\.m2\repository\com\google\guava\guava\30.1.1-jre\guava-30.1.1-jre.jar;C:\Users\talk2\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\talk2\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\talk2\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\talk2\.m2\repository\org\checkerframework\checker-qual\3.8.0\checker-qual-3.8.0.jar;C:\Users\talk2\.m2\repository\com\google\errorprone\error_prone_annotations\2.5.1\error_prone_annotations-2.5.1.jar;C:\Users\talk2\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\talk2\.m2\repository\com\googlecode\owasp-java-html-sanitizer\owasp-java-html-sanitizer\20200713.1\owasp-java-html-sanitizer-20200713.1.jar;C:\Users\talk2\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\talk2\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\talk2\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\talk2\.m2\repository\io\cucumber\cucumber-java\6.10.4\cucumber-java-6.10.4.jar;C:\Users\talk2\.m2\repository\io\cucumber\cucumber-core\6.10.4\cucumber-core-6.10.4.jar;C:\Users\talk2\.m2\repository\io\cucumber\cucumber-gherkin\6.10.4\cucumber-gherkin-6.10.4.jar;C:\Users\talk2\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.10.4\cucumber-gherkin-messages-6.10.4.jar;C:\Users\talk2\.m2\repository\io\cucumber\messages\15.0.0\messages-15.0.0.jar;C:\Users\talk2\.m2\repository\io\cucumber\tag-expressions\3.0.1\tag-expressions-3.0.1.jar;C:\Users\talk2\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\talk2\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;C:\Users\talk2\.m2\repository\io\cucumber\cucumber-plugin\6.10.4\cucumber-plugin-6.10.4.jar;C:\Users\talk2\.m2\repository\io\cucumber\docstring\6.10.4\docstring-6.10.4.jar;C:\Users\talk2\.m2\repository\io\cucumber\html-formatter\13.0.0\html-formatter-13.0.0.jar;C:\Users\talk2\.m2\repository\io\cucumber\create-meta\4.0.0\create-meta-4.0.0.jar;C:\Users\talk2\.m2\repository\org\apiguardian\apiguardian-api\1.1.1\apiguardian-api-1.1.1.jar;C:\Users\talk2\.m2\repository\io\cucumber\cucumber-junit\6.10.4\cucumber-junit-6.10.4.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\talk2"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-04-20"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11.0.11"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\talk2\SelAutoFramework\KarateFramework"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\talk2\AppData\Local\Temp\surefire4300531869422343216\surefirebooter6707987243910129577.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.11+9-LTS-194"/>
+    <property name="user.name" value="talk2"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="C:\Users\talk2\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\talk2\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.11"/>
+    <property name="user.dir" value="C:\Users\talk2\SelAutoFramework\KarateFramework"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.11\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Python39\Scripts\;C:\Python39\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Git\bin;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Java\jdk-11.0.11\bin;C:\apache-maven-3.5.3\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Users\talk2\AppData\Local\Programs\Python\Python38\Lib\site-packages;C:\Users\talk2\AppData\Local\Programs\Python\Python38\Scripts;C:\Drivers;C:\Users\talk2\eclipse-workspace\BatchTest\target;G:\Mobile_Automation\platform-tools;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Java\jdk-11.0.11\lib;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\talk2\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\PyCharm 2020.1\bin;C:\Program Files\TestProject Agent;C:\Users\talk2\AppData\Roaming\npm;."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.11+9-LTS-194"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="testParallel" classname="com.karateTutorials.ParallelTestRunner" time="137.564">
+    <system-out><![CDATA[09:17:11.540 [main] INFO  com.intuit.karate.Runner - using system property 'karate.env': ci
+09:17:13.872 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+09:17:13.928 [main] DEBUG com.intuit.karate.Suite - waiting for 16 features to complete
+09:17:22.135 [pool-2-thread-1] INFO  com.intuit.karate - the grid url set is: false, default: false 
+09:17:22.358 [pool-2-thread-1] INFO  com.intuit.karate - Invoking Docker Chrome Instance 
+09:17:22.373 [pool-2-thread-1] DEBUG com.intuit.karate - custom target configured, calling start()
+09:17:22.380 [1635859042375] DEBUG com.intuit.karate - command: [docker, run, -d, -e, KARATE_SOCAT_START=true, --cap-add=SYS_ADMIN, -p, 9222, ptrthomas/karate-chrome], working dir: null
+09:17:32.259 [1635859042375-out] DEBUG com.intuit.karate - fac1348cf51d5e4cb16223fe97cf463628be85068b5b7dfb33ca0610234e34d9
+09:17:37.311 [1635859042375] DEBUG com.intuit.karate.shell.Command - command complete, exit code: 0 - [docker, run, -d, -e, KARATE_SOCAT_START=true, --cap-add=SYS_ADMIN, -p, 9222, ptrthomas/karate-chrome]
+09:17:37.313 [1635859057312] DEBUG com.intuit.karate - command: [docker, port, fac1348cf51d5e4cb16223fe97cf463628be85068b5b7dfb33ca0610234e34d9, 9222/tcp], working dir: null
+09:17:40.766 [1635859057312-out] DEBUG com.intuit.karate - 0.0.0.0:65032
+09:17:40.822 [1635859057312] DEBUG com.intuit.karate.shell.Command - command complete, exit code: 0 - [docker, port, fac1348cf51d5e4cb16223fe97cf463628be85068b5b7dfb33ca0610234e34d9, 9222/tcp]
+09:17:45.748 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://127.0.0.1:65032/json
+1 > Host: 127.0.0.1:65032
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+09:17:45.902 [pool-2-thread-1] ERROR com.intuit.karate - karate.org.apache.http.NoHttpResponseException: The target server failed to respond, http call failed after 4802 milliseconds for url: http://127.0.0.1:65032/json
+09:17:47.905 [pool-2-thread-1] DEBUG com.intuit.karate.shell.Command - attempt #1 waiting for http to be ready at: http://127.0.0.1:65032/json
+09:17:47.906 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+2 > GET http://127.0.0.1:65032/json
+2 > Host: 127.0.0.1:65032
+2 > Connection: Keep-Alive
+2 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+2 > Accept-Encoding: gzip,deflate
+
+
+09:17:47.912 [pool-2-thread-1] ERROR com.intuit.karate - karate.org.apache.http.NoHttpResponseException: The target server failed to respond, http call failed after 7 milliseconds for url: http://127.0.0.1:65032/json
+09:17:49.959 [pool-2-thread-1] DEBUG com.intuit.karate.shell.Command - attempt #2 waiting for http to be ready at: http://127.0.0.1:65032/json
+09:17:49.971 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+3 > GET http://127.0.0.1:65032/json
+3 > Host: 127.0.0.1:65032
+3 > Connection: Keep-Alive
+3 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+3 > Accept-Encoding: gzip,deflate
+
+
+09:17:49.978 [pool-2-thread-1] ERROR com.intuit.karate - karate.org.apache.http.NoHttpResponseException: The target server failed to respond, http call failed after 9 milliseconds for url: http://127.0.0.1:65032/json
+09:17:51.993 [pool-2-thread-1] DEBUG com.intuit.karate.shell.Command - attempt #3 waiting for http to be ready at: http://127.0.0.1:65032/json
+09:17:51.994 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+4 > GET http://127.0.0.1:65032/json
+4 > Host: 127.0.0.1:65032
+4 > Connection: Keep-Alive
+4 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+4 > Accept-Encoding: gzip,deflate
+
+
+09:17:52.000 [pool-2-thread-1] ERROR com.intuit.karate - karate.org.apache.http.NoHttpResponseException: The target server failed to respond, http call failed after 7 milliseconds for url: http://127.0.0.1:65032/json
+09:17:54.013 [pool-2-thread-1] DEBUG com.intuit.karate.shell.Command - attempt #4 waiting for http to be ready at: http://127.0.0.1:65032/json
+09:17:54.015 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+5 > GET http://127.0.0.1:65032/json
+5 > Host: 127.0.0.1:65032
+5 > Connection: Keep-Alive
+5 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+5 > Accept-Encoding: gzip,deflate
+
+
+09:17:54.029 [pool-2-thread-1] ERROR com.intuit.karate - karate.org.apache.http.NoHttpResponseException: The target server failed to respond, http call failed after 15 milliseconds for url: http://127.0.0.1:65032/json
+09:17:56.042 [pool-2-thread-1] DEBUG com.intuit.karate.shell.Command - attempt #5 waiting for http to be ready at: http://127.0.0.1:65032/json
+09:17:56.044 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+6 > GET http://127.0.0.1:65032/json
+6 > Host: 127.0.0.1:65032
+6 > Connection: Keep-Alive
+6 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+6 > Accept-Encoding: gzip,deflate
+
+
+09:17:56.051 [pool-2-thread-1] ERROR com.intuit.karate - karate.org.apache.http.NoHttpResponseException: The target server failed to respond, http call failed after 9 milliseconds for url: http://127.0.0.1:65032/json
+09:17:58.062 [pool-2-thread-1] DEBUG com.intuit.karate.shell.Command - attempt #6 waiting for http to be ready at: http://127.0.0.1:65032/json
+09:17:58.063 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+7 > GET http://127.0.0.1:65032/json
+7 > Host: 127.0.0.1:65032
+7 > Connection: Keep-Alive
+7 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+7 > Accept-Encoding: gzip,deflate
+
+
+09:17:58.069 [pool-2-thread-1] ERROR com.intuit.karate - karate.org.apache.http.NoHttpResponseException: The target server failed to respond, http call failed after 7 milliseconds for url: http://127.0.0.1:65032/json
+09:18:00.071 [pool-2-thread-1] DEBUG com.intuit.karate.shell.Command - attempt #7 waiting for http to be ready at: http://127.0.0.1:65032/json
+09:18:00.073 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+8 > GET http://127.0.0.1:65032/json
+8 > Host: 127.0.0.1:65032
+8 > Connection: Keep-Alive
+8 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+8 > Accept-Encoding: gzip,deflate
+
+
+09:18:00.083 [pool-2-thread-1] ERROR com.intuit.karate - karate.org.apache.http.NoHttpResponseException: The target server failed to respond, http call failed after 12 milliseconds for url: http://127.0.0.1:65032/json
+09:18:02.091 [pool-2-thread-1] DEBUG com.intuit.karate.shell.Command - attempt #8 waiting for http to be ready at: http://127.0.0.1:65032/json
+09:18:02.092 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+9 > GET http://127.0.0.1:65032/json
+9 > Host: 127.0.0.1:65032
+9 > Connection: Keep-Alive
+9 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+9 > Accept-Encoding: gzip,deflate
+
+
+09:18:02.100 [pool-2-thread-1] ERROR com.intuit.karate - karate.org.apache.http.NoHttpResponseException: The target server failed to respond, http call failed after 9 milliseconds for url: http://127.0.0.1:65032/json
+09:18:04.112 [pool-2-thread-1] DEBUG com.intuit.karate.shell.Command - attempt #9 waiting for http to be ready at: http://127.0.0.1:65032/json
+09:18:04.157 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+10 > GET http://127.0.0.1:65032/json
+10 > Host: 127.0.0.1:65032
+10 > Connection: Keep-Alive
+10 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+10 > Accept-Encoding: gzip,deflate
+
+
+09:18:09.515 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 5246
+10 < 200
+10 < Content-Length: 377
+10 < Content-Type: application/json; charset=UTF-8
+[ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=127.0.0.1:65032/devtools/page/96DDBF650A34D58FA4DE4259258B3FCA",
+   "id": "96DDBF650A34D58FA4DE4259258B3FCA",
+   "title": "",
+   "type": "page",
+   "url": "chrome://welcome/?variant=everywhere",
+   "webSocketDebuggerUrl": "ws://127.0.0.1:65032/devtools/page/96DDBF650A34D58FA4DE4259258B3FCA"
+} ]
+
+09:18:09.677 [pool-2-thread-1] DEBUG com.intuit.karate.shell.Command - ready to accept http connections after 28852 ms - http://127.0.0.1:65032/json
+09:18:09.867 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://127.0.0.1:65032/json
+1 > Host: 127.0.0.1:65032
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+09:18:10.426 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 558
+1 < 200
+1 < Content-Length: 2153
+1 < Content-Type: application/json; charset=UTF-8
+[ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=127.0.0.1:65032/devtools/page/750BE6F1029BE4B72DBBE1512507DFFA",
+   "id": "750BE6F1029BE4B72DBBE1512507DFFA",
+   "title": "CryptoTokenExtension",
+   "type": "background_page",
+   "url": "chrome-extension://kmendfapggjehodndflmmgagdbamhnfd/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://127.0.0.1:65032/devtools/page/750BE6F1029BE4B72DBBE1512507DFFA"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=127.0.0.1:65032/devtools/page/3292B22DD2DF3A9D717B4D1329C0A39B",
+   "id": "3292B22DD2DF3A9D717B4D1329C0A39B",
+   "title": "Google Network Speech",
+   "type": "background_page",
+   "url": "chrome-extension://neajdppkdcdipfabeoofebfddakdcjhd/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://127.0.0.1:65032/devtools/page/3292B22DD2DF3A9D717B4D1329C0A39B"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=127.0.0.1:65032/devtools/page/BA87201A2A7FC4B1C8813602FC46C2DE",
+   "id": "BA87201A2A7FC4B1C8813602FC46C2DE",
+   "title": "Feedback",
+   "type": "background_page",
+   "url": "chrome-extension://gfdkimpbcpahaombhbimeihdjnejgicl/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://127.0.0.1:65032/devtools/page/BA87201A2A7FC4B1C8813602FC46C2DE"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=127.0.0.1:65032/devtools/page/B84C95E5AC2D310BE132E8598539F3A4",
+   "id": "B84C95E5AC2D310BE132E8598539F3A4",
+   "title": "Google Hangouts",
+   "type": "background_page",
+   "url": "chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/background.html",
+   "webSocketDebuggerUrl": "ws://127.0.0.1:65032/devtools/page/B84C95E5AC2D310BE132E8598539F3A4"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=127.0.0.1:65032/devtools/page/96DDBF650A34D58FA4DE4259258B3FCA",
+   "id": "96DDBF650A34D58FA4DE4259258B3FCA",
+   "title": "",
+   "type": "page",
+   "url": "chrome://welcome/?variant=everywhere",
+   "webSocketDebuggerUrl": "ws://127.0.0.1:65032/devtools/page/96DDBF650A34D58FA4DE4259258B3FCA"
+} ]
+
+09:18:10.431 [pool-2-thread-1] DEBUG com.intuit.karate.shell.Command - ready to accept http connections after 613 ms - http://127.0.0.1:65032/json
+09:18:10.433 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > GET http://127.0.0.1:65032/json
+1 > Host: 127.0.0.1:65032
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.11)
+1 > Accept-Encoding: gzip,deflate
+
+
+09:18:10.528 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 95
+1 < 200
+1 < Content-Length: 2153
+1 < Content-Type: application/json; charset=UTF-8
+[ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=127.0.0.1:65032/devtools/page/750BE6F1029BE4B72DBBE1512507DFFA",
+   "id": "750BE6F1029BE4B72DBBE1512507DFFA",
+   "title": "CryptoTokenExtension",
+   "type": "background_page",
+   "url": "chrome-extension://kmendfapggjehodndflmmgagdbamhnfd/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://127.0.0.1:65032/devtools/page/750BE6F1029BE4B72DBBE1512507DFFA"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=127.0.0.1:65032/devtools/page/3292B22DD2DF3A9D717B4D1329C0A39B",
+   "id": "3292B22DD2DF3A9D717B4D1329C0A39B",
+   "title": "Google Network Speech",
+   "type": "background_page",
+   "url": "chrome-extension://neajdppkdcdipfabeoofebfddakdcjhd/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://127.0.0.1:65032/devtools/page/3292B22DD2DF3A9D717B4D1329C0A39B"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=127.0.0.1:65032/devtools/page/BA87201A2A7FC4B1C8813602FC46C2DE",
+   "id": "BA87201A2A7FC4B1C8813602FC46C2DE",
+   "title": "Feedback",
+   "type": "background_page",
+   "url": "chrome-extension://gfdkimpbcpahaombhbimeihdjnejgicl/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://127.0.0.1:65032/devtools/page/BA87201A2A7FC4B1C8813602FC46C2DE"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=127.0.0.1:65032/devtools/page/B84C95E5AC2D310BE132E8598539F3A4",
+   "id": "B84C95E5AC2D310BE132E8598539F3A4",
+   "title": "Google Hangouts",
+   "type": "background_page",
+   "url": "chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/background.html",
+   "webSocketDebuggerUrl": "ws://127.0.0.1:65032/devtools/page/B84C95E5AC2D310BE132E8598539F3A4"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=127.0.0.1:65032/devtools/page/96DDBF650A34D58FA4DE4259258B3FCA",
+   "id": "96DDBF650A34D58FA4DE4259258B3FCA",
+   "title": "",
+   "type": "page",
+   "url": "chrome://welcome/?variant=everywhere",
+   "webSocketDebuggerUrl": "ws://127.0.0.1:65032/devtools/page/96DDBF650A34D58FA4DE4259258B3FCA"
+} ]
+
+09:18:10.640 [pool-2-thread-1] DEBUG c.intuit.karate.driver.DriverOptions - root frame id: 96DDBF650A34D58FA4DE4259258B3FCA
+09:18:21.843 [nioEventLoopGroup-2-1] DEBUG c.i.k.http.WebSocketClientHandler - websocket client connected
+09:18:21.846 [pool-2-thread-1] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":1,"method":"Target.attachToTarget","params":{"targetId":"96DDBF650A34D58FA4DE4259258B3FCA","flatten":true}}
+09:18:22.048 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Target.attachedToTarget","params":{"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D","targetInfo":{"targetId":"96DDBF650A34D58FA4DE4259258B3FCA","type":"page","title":"Welcome to Chrome","url":"chrome://welcome/","attached":true,"canAccessOpener":false,"browserContextId":"CC11E1DB040AA80FA16A681646DE44E8"},"waitingForDebugger":false}}
+09:18:22.050 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":1,"result":{"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}}
+09:18:22.052 [pool-2-thread-1] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":2,"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D","method":"Target.activateTarget","params":{"targetId":"96DDBF650A34D58FA4DE4259258B3FCA"}}
+09:18:22.057 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":2,"result":{},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:22.059 [pool-2-thread-1] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":3,"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D","method":"Page.enable"}
+09:18:23.541 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":3,"result":{},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:23.542 [pool-2-thread-1] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":4,"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D","method":"Runtime.enable"}
+09:18:23.671 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Runtime.executionContextCreated","params":{"context":{"id":1,"origin":"chrome://welcome","name":"","uniqueId":"-8339054598915356957.-4429518029450149751","auxData":{"isDefault":true,"type":"default","frameId":"96DDBF650A34D58FA4DE4259258B3FCA"}}},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:23.672 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":4,"result":{},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:23.691 [pool-2-thread-1] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":5,"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D","method":"Browser.getWindowForTarget","params":{"targetId":"96DDBF650A34D58FA4DE4259258B3FCA"}}
+09:18:23.738 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.loadEventFired","params":{"timestamp":670.38203},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:23.741 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameStoppedLoading","params":{"frameId":"96DDBF650A34D58FA4DE4259258B3FCA"},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:23.742 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":5,"result":{"windowId":1,"bounds":{"left":0,"top":0,"width":1279,"height":719,"windowState":"normal"}},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:24.092 [pool-2-thread-1] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":6,"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D","method":"Page.navigate","params":{"url":"https:\/\/www.bing.com"}}
+09:18:30.243 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":6,"result":{"frameId":"96DDBF650A34D58FA4DE4259258B3FCA","loaderId":"C1713EA69A85C6D5542B8E40E17864AE"},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:30.268 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Runtime.executionContextsCleared","params":{},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:30.269 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameStartedLoading","params":{"frameId":"96DDBF650A34D58FA4DE4259258B3FCA"},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:30.359 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Runtime.executionContextsCleared","params":{},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:30.378 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameNavigated","params":{"frame":{"id":"96DDBF650A34D58FA4DE4259258B3FCA","loaderId":"C1713EA69A85C6D5542B8E40E17864AE","url":"https://www.bing.com/","domainAndRegistry":"bing.com","securityOrigin":"https://www.bing.com","mimeType":"text/html","adFrameType":"none","secureContextType":"Secure","crossOriginIsolatedContextType":"NotIsolated","gatedAPIFeatures":["SharedArrayBuffers","SharedArrayBuffersTransferAllowed"]}},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:30.392 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Runtime.executionContextCreated","params":{"context":{"id":1,"origin":"https://www.bing.com","name":"","uniqueId":"6501389159886326297.-6605515034957672348","auxData":{"isDefault":true,"type":"default","frameId":"96DDBF650A34D58FA4DE4259258B3FCA"}}},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:30.575 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.domContentEventFired","params":{"timestamp":677.197242},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:30.883 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.loadEventFired","params":{"timestamp":677.580319},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:30.883 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameStoppedLoading","params":{"frameId":"96DDBF650A34D58FA4DE4259258B3FCA"},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:31.768 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameAttached","params":{"frameId":"DFEE0289589E71A63C6BE652B03705E3","parentFrameId":"96DDBF650A34D58FA4DE4259258B3FCA","stack":{"callFrames":[{"functionName":"","scriptId":"8","url":"https://r.bing.com/rp/t3AZrPm6P8cWJzaHDi7qWyH9DDo.br.js","lineNumber":0,"columnNumber":7927},{"functionName":"","scriptId":"8","url":"https://r.bing.com/rp/t3AZrPm6P8cWJzaHDi7qWyH9DDo.br.js","lineNumber":0,"columnNumber":7601},{"functionName":"","scriptId":"8","url":"https://r.bing.com/rp/t3AZrPm6P8cWJzaHDi7qWyH9DDo.br.js","lineNumber":0,"columnNumber":20101}]}},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:31.769 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameStartedLoading","params":{"frameId":"DFEE0289589E71A63C6BE652B03705E3"},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:31.854 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameNavigated","params":{"frame":{"id":"DFEE0289589E71A63C6BE652B03705E3","parentId":"96DDBF650A34D58FA4DE4259258B3FCA","loaderId":"78050F60FE1ADEC0D6172C274A9BBB2D","name":"","url":"about:srcdoc","domainAndRegistry":"","securityOrigin":"://","mimeType":"text/html","adFrameType":"none","secureContextType":"Secure","crossOriginIsolatedContextType":"NotIsolated","gatedAPIFeatures":["SharedArrayBuffers","SharedArrayBuffersTransferAllowed"]}},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:31.855 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Runtime.executionContextCreated","params":{"context":{"id":2,"origin":"https://www.bing.com","name":"","uniqueId":"-8809413781375340893.673736021496815930","auxData":{"isDefault":true,"type":"default","frameId":"DFEE0289589E71A63C6BE652B03705E3"}}},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:31.896 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameStoppedLoading","params":{"frameId":"DFEE0289589E71A63C6BE652B03705E3"},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:31.908 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameDetached","params":{"frameId":"DFEE0289589E71A63C6BE652B03705E3","reason":"remove"},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:31.909 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Runtime.executionContextDestroyed","params":{"executionContextId":2},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:33.496 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameAttached","params":{"frameId":"A12635A6AD1E738E5F9C78C21A729D73","parentFrameId":"96DDBF650A34D58FA4DE4259258B3FCA","stack":{"callFrames":[{"functionName":"t","scriptId":"40","url":"https://r.bing.com/rp/V_fBQ_iVmAgE_Ta_T-6BNXc0ZY4.br.js","lineNumber":0,"columnNumber":273},{"functionName":"i","scriptId":"40","url":"https://r.bing.com/rp/V_fBQ_iVmAgE_Ta_T-6BNXc0ZY4.br.js","lineNumber":0,"columnNumber":454},{"functionName":"e","scriptId":"6","url":"https://www.bing.com/rp/CU7bDmVsW1tCcF5xVu9DdmUrf94.br.js","lineNumber":0,"columnNumber":2671},{"functionName":"o","scriptId":"6","url":"https://www.bing.com/rp/CU7bDmVsW1tCcF5xVu9DdmUrf94.br.js","lineNumber":0,"columnNumber":2904},{"functionName":"","scriptId":"42","url":"","lineNumber":1,"columnNumber":871},{"functionName":"","scriptId":"42","url":"","lineNumber":1,"columnNumber":905},{"functionName":"at","scriptId":"6","url":"https://www.bing.com/rp/CU7bDmVsW1tCcF5xVu9DdmUrf94.br.js","lineNumber":0,"columnNumber":10167},{"functionName":"hi","s ...
+09:18:33.498 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameStartedLoading","params":{"frameId":"A12635A6AD1E738E5F9C78C21A729D73"},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:34.214 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameAttached","params":{"frameId":"06AF38C7FA0443BFA2E513825F98B494","parentFrameId":"96DDBF650A34D58FA4DE4259258B3FCA","stack":{"callFrames":[{"functionName":"wlc","scriptId":"38","url":"","lineNumber":1,"columnNumber":235},{"functionName":"f","scriptId":"39","url":"https://r.bing.com/rp/8CgcSSLayxEVUBf0swP_bQGMId8.br.js","lineNumber":0,"columnNumber":79}]}},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:34.215 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameStartedLoading","params":{"frameId":"06AF38C7FA0443BFA2E513825F98B494"},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:34.566 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameStoppedLoading","params":{"frameId":"A12635A6AD1E738E5F9C78C21A729D73"},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:34.567 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameDetached","params":{"frameId":"A12635A6AD1E738E5F9C78C21A729D73","reason":"swap"},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:34.640 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameAttached","params":{"frameId":"A12635A6AD1E738E5F9C78C21A729D73","parentFrameId":"96DDBF650A34D58FA4DE4259258B3FCA"},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:35.028 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameStartedLoading","params":{"frameId":"A12635A6AD1E738E5F9C78C21A729D73"},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:35.080 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameNavigated","params":{"frame":{"id":"A12635A6AD1E738E5F9C78C21A729D73","parentId":"96DDBF650A34D58FA4DE4259258B3FCA","loaderId":"4E90BC35F712A1424674701E0633DDE9","name":"aadssofr","url":"https://www.bing.com/orgid/idtoken/conditional","domainAndRegistry":"bing.com","securityOrigin":"https://www.bing.com","mimeType":"text/html","adFrameType":"none","secureContextType":"Secure","crossOriginIsolatedContextType":"NotIsolated","gatedAPIFeatures":["SharedArrayBuffers","SharedArrayBuffersTransferAllowed"]}},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:35.081 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Runtime.executionContextCreated","params":{"context":{"id":3,"origin":"https://www.bing.com","name":"","uniqueId":"-4321185602715931757.3186659979238731488","auxData":{"isDefault":true,"type":"default","frameId":"A12635A6AD1E738E5F9C78C21A729D73"}}},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:35.086 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameStoppedLoading","params":{"frameId":"A12635A6AD1E738E5F9C78C21A729D73"},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:35.428 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameNavigated","params":{"frame":{"id":"06AF38C7FA0443BFA2E513825F98B494","parentId":"96DDBF650A34D58FA4DE4259258B3FCA","loaderId":"D37272F1B30862FB9EAE1E68D94D62CC","name":"","url":"https://www.bing.com/secure/Passport.aspx?popup=1&ssl=1","domainAndRegistry":"bing.com","securityOrigin":"https://www.bing.com","mimeType":"text/html","adFrameType":"none","secureContextType":"Secure","crossOriginIsolatedContextType":"NotIsolated","gatedAPIFeatures":["SharedArrayBuffers","SharedArrayBuffersTransferAllowed"]}},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:35.429 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Runtime.executionContextCreated","params":{"context":{"id":4,"origin":"https://www.bing.com","name":"","uniqueId":"3307220823655590603.-416058837931333472","auxData":{"isDefault":true,"type":"default","frameId":"06AF38C7FA0443BFA2E513825F98B494"}}},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:35.564 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameStoppedLoading","params":{"frameId":"06AF38C7FA0443BFA2E513825F98B494"},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:36.360 [pool-2-thread-1] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":7,"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D","method":"Page.captureScreenshot"}
+09:18:38.118 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":7,"result":{"data":"iVBORw0KGgoAAAANSUhEUgAABPcAAAJ6CAYAAABE5Kf+AAAAAXNSR0IArs4c6QAAIABJREFUeJykvVuPLEmS3/czc/eIzKo6t77M9u6qZ8EVJIIQBL2LL9KT9LQfdiVAX4ASCOhBokQCkihSq93lzs5MT1/OpTIzwt1MD2YeWadnKBBkzpw+VXWyIiPc7fq3v5nLP/5v/iu/Xa9oKfyhl4jkF/kHB4RSFVXFbSCqzLfZGEgR3KGoMswQQFXpvaMqaCns2465ISr0sWNmiIP2G69955dfPPL66cRl2/nthyv/+jfP3LxAXdhtoAo+jGIGPhBXhII5uHvct/hx/6qCqlJKPIiqIiq4QC01vjbH3dGi4PGcZoOe14T4sQ3D82fujlusiptTRHGz+N4dd8Msfpd8f36DOIjENYW8FqAiIHJcH4sNOK7lTrwzP8McxGM/PLZI1BEk9yLWoRQQJD5DYx0kP0cl9uVYLxFEFHeL7VdFiyKioCEXqooUjc+Z6+COWc/rkn8bqgrE9bRIfn9/zXuMZ879EgUcG47l+o4xQGONR+6Ru1NcMXfMxrGPpZSQKxVabYgIokbReMZaSkizCGZ27NEwi3XP/bjv2Yv35r/ZGPG3kfswL2PYgFJzzXLPVYl7yjWde1xy7SU+JNYacBzrhuW6tNrovWMOY4y4l0HKoOM2MPdjnyUuh3ns6XBDEBCYn2C5jiJ3OVZtx3OrSMoL1KrUWmm1UdZKWRqlVWortFYpNd4rRY/3aqlQlDFgjE5JMzKGc9139r6xaMF9Q+lov7KUuIYNY992xjC6wz4sdBxh64ainKWBw813hkIZndcivDuvrCflx8tHfvNhZ6fQAVdBpaDuqDuYI2rx87Rlc8vnGpSU8/i/HHoiqhQt7PsIm2CCGex7Ryi4QzfHRBk2YiMAcVJO7fiZv5S3aVte6MO8J1VNHUo9LCEvtRaklrDJRam1UUqhtHLYP1VFcMwNLWD2Uu8ES5myMd ...
+09:18:38.195 [pool-2-thread-1] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":8,"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D","method":"Page.navigate","params":{"url":"https:\/\/www.google.com"}}
+09:18:38.906 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":8,"result":{"frameId":"96DDBF650A34D58FA4DE4259258B3FCA","loaderId":"D8A9C04A2A986E62178B70645B05C148"},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:38.921 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Runtime.executionContextsCleared","params":{},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:38.922 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameStartedLoading","params":{"frameId":"96DDBF650A34D58FA4DE4259258B3FCA"},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:39.027 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Runtime.executionContextsCleared","params":{},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:39.028 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameNavigated","params":{"frame":{"id":"96DDBF650A34D58FA4DE4259258B3FCA","loaderId":"D8A9C04A2A986E62178B70645B05C148","url":"https://www.google.com/","domainAndRegistry":"google.com","securityOrigin":"https://www.google.com","mimeType":"text/html","adFrameType":"none","secureContextType":"Secure","crossOriginIsolatedContextType":"NotIsolated","gatedAPIFeatures":["SharedArrayBuffers","SharedArrayBuffersTransferAllowed"]}},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:39.029 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Runtime.executionContextCreated","params":{"context":{"id":1,"origin":"https://www.google.com","name":"","uniqueId":"7312326347127512236.5790948635721624610","auxData":{"isDefault":true,"type":"default","frameId":"96DDBF650A34D58FA4DE4259258B3FCA"}}},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:40.416 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.navigatedWithinDocument","params":{"frameId":"96DDBF650A34D58FA4DE4259258B3FCA","url":"https://www.google.com/"},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:40.417 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.domContentEventFired","params":{"timestamp":686.93289},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:40.426 [pool-2-thread-1] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":9,"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D","method":"Browser.setWindowBounds","params":{"windowId":1,"bounds":{"windowState":"maximized"}}}
+09:18:40.456 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":9,"result":{},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:40.570 [pool-2-thread-1] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":10,"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D","method":"Page.captureScreenshot"}
+09:18:40.653 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameResized","params":{},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:41.395 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":10,"result":{"data":"iVBORw0KGgoAAAANSUhEUgAABQAAAAJ0CAYAAABN8I6uAAAAAXNSR0IArs4c6QAAIABJREFUeJzs3XeUVeXZ/vHv3qfX6YXeiyKgIqCgSMCKGrHGhi3WJK+xxBj9xWjUaEzMazTlTcSSxB67YKMrKr0JCAy9DMwwvZxe9u+PPYwQNLYBkuH6rHXWzNmzy7P3weVwcT/PbViWZSEiIiIiIiIiIiLtknmgByAiIiIiIiIiIiL7jgJAERERERERERGRdkwBoIiIiIiIiIiISDumAFBERERERERERKQdUwAoIiIiIiIiIiLSjikAFBERERERERERaccUAIqIiIiIiIiIiLRjCgBFRERERERERETaMQWAIiIiIiIiIiIi7ZgCQBERERERERERkXZMAaCIiIiIiIiIiEg75jzQAxARERERERERkf9cUz9N8KcZEdZUpGmMWwd6OO1a2GvQr9TJD8cEOPFQT5ud17AsS5+ciIiIiIiIiIjs5d0VCb7/t/oDPYyD0hOX53LKYW0TAmoKsIiIiIiIiIiIfK4/zYgc6CEctNry2SsAFBERERERERGRz7V2Z/pAD+Gg1ZbPXgGgiIiIiIiIiIh8riat+XfAtOWzVwAoIiIiIiIiIiLSjikAFBERERERERERaccUAIqIiIiIiIiIiLRjCgBFRERERERERETaMQWAIiIiIiIiIiIi7ZjzQA9ARERERERERORgtXpNGY8/+Q8ArrryUvr36/uNtov8O6oAFBERERERERE5QCY++Xeqa2qorqlpDfa+yXaRf+c/LgAcN+4M/v6Ppw/0MERERERERERE9rloNNr6vYX1jbcfLKbcXMAVI/375Nxhr0H5QyX0K21/E2YPSAA4b958evTswy233Lrfr/3008+STCb32fnnzZ/PpZdewZFDhtG7T3+OPuZY7vvV/SQSidZ9Zs6cxYaNG/fZGERERERERKR9qKmp4Re/+AXHHnss/fv3Z9iwYVxzzTUsX ...
+09:18:41.448 [pool-2-thread-1] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":11,"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D","method":"Runtime.evaluate","params":{"expression":"document.evaluate(\"\/\/a[contains(text(), 'Store')]\", document, null, 9, null).singleNodeValue.click()","returnByValue":true}}
+09:18:41.644 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameScheduledNavigation","params":{"frameId":"96DDBF650A34D58FA4DE4259258B3FCA","delay":0,"reason":"anchorClick","url":"https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US"},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:41.644 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameRequestedNavigation","params":{"frameId":"96DDBF650A34D58FA4DE4259258B3FCA","reason":"anchorClick","url":"https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US","disposition":"currentTab"},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:41.688 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameClearedScheduledNavigation","params":{"frameId":"96DDBF650A34D58FA4DE4259258B3FCA"},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:41.689 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":11,"result":{"result":{"type":"undefined"}},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:42.234 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Runtime.executionContextsCleared","params":{},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:42.235 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameNavigated","params":{"frame":{"id":"96DDBF650A34D58FA4DE4259258B3FCA","loaderId":"A0A9BB52BBB95974D20530BB039AC49A","url":"https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US","domainAndRegistry":"google.com","securityOrigin":"https://store.google.com","mimeType":"text/html","adFrameType":"none","secureContextType":"Secure","crossOriginIsolatedContextType":"NotIsolated","gatedAPIFeatures":["SharedArrayBuffers","SharedArrayBuffersTransferAllowed"]}},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:42.237 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Runtime.executionContextCreated","params":{"context":{"id":2,"origin":"https://store.google.com","name":"","uniqueId":"-6768670367995161768.-6362486456785967750","auxData":{"isDefault":true,"type":"default","frameId":"96DDBF650A34D58FA4DE4259258B3FCA"}}},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:44.428 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.domContentEventFired","params":{"timestamp":691.125001},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:44.769 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Runtime.consoleAPICalled","params":{"type":"log","args":[{"type":"string","value":"%c%s"},{"type":"string","value":"color: red; background: yellow; font-size: 24px;"},{"type":"string","value":"WARNING!"}],"executionContextId":2,"timestamp":1.635859124765548e+12,"stackTrace":{"callFrames":[{"functionName":"c","scriptId":"74","url":"https://www.gstatic.com/_/mss/boq-gstore/_/js/k=boq-gstore.Gstore.en_US.qL3EV770s2g.2021.O/am=MFeU9v_nrQKA/d=1/excm=_b,_tp,homepageview/ed=1/dg=0/wt=2/esmo=1/rs=AK-qVtGssRF-HH9GuAB1dAr6Yz08OiL9xQ/m=_b,_tp","lineNumber":621,"columnNumber":251}]}},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:44.771 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - [console] %c%s
+09:18:44.771 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - [console] color: red; background: yellow; font-size: 24px;
+09:18:44.771 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - [console] WARNING!
+09:18:44.774 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Runtime.consoleAPICalled","params":{"type":"log","args":[{"type":"string","value":"%c%s"},{"type":"string","value":"font-size: 18px;"},{"type":"string","value":"Using this console may allow attackers to impersonate you and steal your information using an attack called Self-XSS.\nDo not enter or paste code that you do not understand."}],"executionContextId":2,"timestamp":1.635859124766875e+12,"stackTrace":{"callFrames":[{"functionName":"c","scriptId":"74","url":"https://www.gstatic.com/_/mss/boq-gstore/_/js/k=boq-gstore.Gstore.en_US.qL3EV770s2g.2021.O/am=MFeU9v_nrQKA/d=1/excm=_b,_tp,homepageview/ed=1/dg=0/wt=2/esmo=1/rs=AK-qVtGssRF-HH9GuAB1dAr6Yz08OiL9xQ/m=_b,_tp","lineNumber":621,"columnNumber":251}]}},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:44.775 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - [console] %c%s
+09:18:44.775 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - [console] font-size: 18px;
+09:18:44.775 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - [console] Using this console may allow attackers to impersonate you and steal your information using an attack called Self-XSS.
+Do not enter or paste code that you do not understand.
+09:18:44.777 [pool-2-thread-1] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":12,"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D","method":"Page.getNavigationHistory"}
+09:18:44.790 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":12,"result":{"currentIndex":3,"entries":[{"id":1,"url":"chrome://welcome/","userTypedURL":"chrome://welcome/?variant=everywhere","title":"Welcome to Chrome","transitionType":"auto_toplevel"},{"id":11,"url":"https://www.bing.com/","userTypedURL":"https://www.bing.com/","title":"Bing","transitionType":"typed"},{"id":13,"url":"https://www.google.com/","userTypedURL":"https://www.google.com/","title":"Google","transitionType":"typed"},{"id":15,"url":"https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US","userTypedURL":"https://store.google.com/US?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US","title":"Google Store for Google Made Devices & Accessories","transitionType":"link"}]},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:44.792 [pool-2-thread-1] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":13,"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D","method":"Page.navigateToHistoryEntry","params":{"entryId":13}}
+09:18:44.795 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":13,"result":{},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:45.029 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Runtime.executionContextsCleared","params":{},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:45.029 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameNavigated","params":{"frame":{"id":"96DDBF650A34D58FA4DE4259258B3FCA","loaderId":"1F531781AEC3344EEC6BB87447DE5505","url":"https://www.google.com/","domainAndRegistry":"google.com","securityOrigin":"https://www.google.com","mimeType":"text/html","adFrameType":"none","secureContextType":"Secure","crossOriginIsolatedContextType":"NotIsolated","gatedAPIFeatures":["SharedArrayBuffers","SharedArrayBuffersTransferAllowed"]}},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:45.030 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Runtime.executionContextCreated","params":{"context":{"id":3,"origin":"https://www.google.com","name":"","uniqueId":"6719200994253065039.7864064652784970550","auxData":{"isDefault":true,"type":"default","frameId":"96DDBF650A34D58FA4DE4259258B3FCA"}}},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:45.406 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.domContentEventFired","params":{"timestamp":692.057058},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:45.413 [pool-2-thread-1] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":14,"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D","method":"Runtime.evaluate","params":{"expression":"document.evaluate(\"\/\/a[contains(text(), 'About')]\", document, null, 9, null).singleNodeValue.click()","returnByValue":true}}
+09:18:45.585 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameScheduledNavigation","params":{"frameId":"96DDBF650A34D58FA4DE4259258B3FCA","delay":0,"reason":"anchorClick","url":"https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header"},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:45.586 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameRequestedNavigation","params":{"frameId":"96DDBF650A34D58FA4DE4259258B3FCA","reason":"anchorClick","url":"https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header","disposition":"currentTab"},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:45.608 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameClearedScheduledNavigation","params":{"frameId":"96DDBF650A34D58FA4DE4259258B3FCA"},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:45.642 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"id":14,"result":{"result":{"type":"undefined"}},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:46.003 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Runtime.executionContextsCleared","params":{},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:46.006 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameStartedLoading","params":{"frameId":"96DDBF650A34D58FA4DE4259258B3FCA"},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:46.059 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Runtime.executionContextsCleared","params":{},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:46.059 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.frameNavigated","params":{"frame":{"id":"96DDBF650A34D58FA4DE4259258B3FCA","loaderId":"408E12ECDE99C2BBB9CFE2926310A594","url":"https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header","domainAndRegistry":"about.google","securityOrigin":"https://about.google","mimeType":"text/html","adFrameType":"none","secureContextType":"Secure","crossOriginIsolatedContextType":"NotIsolated","gatedAPIFeatures":["SharedArrayBuffers","SharedArrayBuffersTransferAllowed"]}},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:46.060 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Runtime.executionContextCreated","params":{"context":{"id":1,"origin":"https://about.google","name":"","uniqueId":"-8449390362406767151.-8712412789655232950","auxData":{"isDefault":true,"type":"default","frameId":"96DDBF650A34D58FA4DE4259258B3FCA"}}},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:48.044 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Runtime.consoleAPICalled","params":{"type":"warning","args":[{"type":"string","value":"HaTS may be served with ID:"},{"type":"string","value":"y58Yu6pPt0gMjUpJXu90VLdD3T1d"},{"type":"string","value":"ALL_us"}],"executionContextId":1,"timestamp":1.635859127894825e+12,"stackTrace":{"callFrames":[{"functionName":"ff.trigger","scriptId":"11","url":"https://about.google/assets-stories-2021/js/index.min.js?cache=435068a","lineNumber":1226,"columnNumber":52},{"functionName":"","scriptId":"11","url":"https://about.google/assets-stories-2021/js/index.min.js?cache=435068a","lineNumber":1225,"columnNumber":760},{"functionName":"ff","scriptId":"11","url":"https://about.google/assets-stories-2021/js/index.min.js?cache=435068a","lineNumber":1225,"columnNumber":606},{"functionName":"","scriptId":"11","url":"https://about.google/assets-stories-2021/js/index.min.js?cache=435068a","lineNumber":1236,"columnNumber":278},{"functionName":"","scriptId":"11","url":"https://about.google/assets-stories-2021/js/index.min.js? ...
+09:18:48.045 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - [console] HaTS may be served with ID:
+09:18:48.045 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - [console] y58Yu6pPt0gMjUpJXu90VLdD3T1d
+09:18:48.045 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - [console] ALL_us
+09:18:48.101 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Runtime.consoleAPICalled","params":{"type":"warning","args":[{"type":"string","value":"HaTS may be served with ID:"},{"type":"string","value":"RzFXDacCD0gMjUpJXu90NuK762Qx"},{"type":"string","value":"ALL_us"}],"executionContextId":1,"timestamp":1.6358591280723528e+12,"stackTrace":{"callFrames":[{"functionName":"ff.trigger","scriptId":"11","url":"https://about.google/assets-stories-2021/js/index.min.js?cache=435068a","lineNumber":1226,"columnNumber":52},{"functionName":"","scriptId":"11","url":"https://about.google/assets-stories-2021/js/index.min.js?cache=435068a","lineNumber":1225,"columnNumber":760},{"functionName":"ff","scriptId":"11","url":"https://about.google/assets-stories-2021/js/index.min.js?cache=435068a","lineNumber":1225,"columnNumber":606},{"functionName":"","scriptId":"11","url":"https://about.google/assets-stories-2021/js/index.min.js?cache=435068a","lineNumber":1236,"columnNumber":278},{"functionName":"","scriptId":"11","url":"https://about.google/assets-stories-2021/js/index.min.js ...
+09:18:48.101 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - [console] HaTS may be served with ID:
+09:18:48.102 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - [console] RzFXDacCD0gMjUpJXu90NuK762Qx
+09:18:48.102 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - [console] ALL_us
+09:18:48.215 [nioEventLoopGroup-2-1] DEBUG c.intuit.karate.driver.DriverOptions - << {"method":"Page.domContentEventFired","params":{"timestamp":694.887605},"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D"}
+09:18:48.678 [pool-2-thread-1] DEBUG c.intuit.karate.driver.DriverOptions - >> {"id":15,"sessionId":"0A9E37440C1AF8D0D1937B3C8B339F2D","method":"Target.closeTarget","params":{"targetId":"96DDBF650A34D58FA4DE4259258B3FCA"}}
+09:18:48.718 [nioEventLoopGroup-2-1] DEBUG c.i.k.http.WebSocketClientHandler - websocket client disconnected
+09:18:48.718 [pool-2-thread-1] DEBUG com.intuit.karate - custom target configured, attempting stop()
+09:18:48.734 [1635859128719] DEBUG com.intuit.karate - command: [docker, stop, fac1348cf51d5e4cb16223fe97cf463628be85068b5b7dfb33ca0610234e34d9], working dir: null
+09:19:06.482 [1635859128719-out] DEBUG com.intuit.karate - fac1348cf51d5e4cb16223fe97cf463628be85068b5b7dfb33ca0610234e34d9
+09:19:06.601 [1635859128719] DEBUG com.intuit.karate.shell.Command - command complete, exit code: 0 - [docker, stop, fac1348cf51d5e4cb16223fe97cf463628be85068b5b7dfb33ca0610234e34d9]
+09:19:06.602 [1635859146601] DEBUG com.intuit.karate - command: [docker, cp, fac1348cf51d5e4cb16223fe97cf463628be85068b5b7dfb33ca0610234e34d9:/tmp, target\karate-chrome_fac1348cf51d], working dir: null
+09:19:09.737 [1635859146601-out] DEBUG com.intuit.karate - symlink 8437000761012851476 C:\Users\talk2\SelAutoFramework\KarateFramework\target\karate-chrome_fac1348cf51d\.com.google.Chrome.dgO48T\SingletonCookie: A required privilege is not held by the client.
+09:19:09.826 [1635859146601] WARN  com.intuit.karate.shell.Command - exit code was non-zero: 1 - [docker, cp, fac1348cf51d5e4cb16223fe97cf463628be85068b5b7dfb33ca0610234e34d9:/tmp, target\karate-chrome_fac1348cf51d] working dir: null
+09:19:09.827 [1635859149827] DEBUG com.intuit.karate - command: [docker, rm, fac1348cf51d5e4cb16223fe97cf463628be85068b5b7dfb33ca0610234e34d9], working dir: null
+09:19:15.460 [1635859149827-out] DEBUG com.intuit.karate - fac1348cf51d5e4cb16223fe97cf463628be85068b5b7dfb33ca0610234e34d9
+09:19:15.515 [1635859149827] DEBUG com.intuit.karate.shell.Command - command complete, exit code: 0 - [docker, rm, fac1348cf51d5e4cb16223fe97cf463628be85068b5b7dfb33ca0610234e34d9]
+09:19:15.516 [pool-2-thread-1] WARN  com.intuit.karate - video file missing: target\karate-chrome_fac1348cf51d\karate.mp4
+---------------------------------------------------------
+feature: classpath:com/karateTutorials/srcTest.feature
+scenarios:  1 | passed:  1 | failed:  0 | time: 86.3960
+---------------------------------------------------------
+
+09:19:22.075 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 15 of 16 (1 remaining) classpath:com/karateTutorials/srcTest.feature
+Karate version: 1.2.0.RC1
+======================================================
+elapsed: 130.73 | threads:    5 | thread time: 86.40 
+features:     1 | skipped:   15 | efficiency: 0.13
+scenarios:    1 | passed:     1 | failed: 0
+======================================================
+
+HTML report: (paste into browser to view) | Karate version: 1.2.0.RC1
+file:///C:/Users/talk2/SelAutoFramework/KarateFramework/target/karate-reports/karate-summary.html
+===================================================================
+
+]]></system-out>
+    <system-err><![CDATA[Nov 02, 2021 9:19:23 AM net.masterthought.cucumber.ReportParser parseJsonFiles
+INFO: File 'C:\Users\talk2\SelAutoFramework\KarateFramework\target\karate-reports\com.karateTutorials.srcTest.json' contains 1 features
+]]></system-err>
+  </testcase>
+</testsuite>
